@@ -1,13 +1,12 @@
 import "./App.css";
-import MainPage from "./component/MainPage";
 import { Routes, Route } from "react-router-dom";
-import routes from "./pages/routes";
-import "./App.css";
+import { routes } from "@routes/index";
+
 function App() {
   return (
     <Routes>
-      {routes.map(({ path, element: Element }) => (
-        <Route path={path} element={<Element />} />
+      {routes.map(({ path, element: Page }) => (
+        <Route path={path} element={<Page />} />
       ))}
     </Routes>
   );

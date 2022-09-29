@@ -1,5 +1,6 @@
-import useScript from "../hooks/useScript";
+import useScript from "@hooks/useScript";
 import { Container, Split } from "./MainPage.styled";
+import { Link } from "react-router-dom";
 
 const MainPage = () => {
   useScript("assets/js/script.js");
@@ -14,9 +15,9 @@ const MainPage = () => {
             Break into investment banking, consulting and 20+ <br />
             Industries, AI Resume Anlayzer and more!
           </span>
-          <a href="#" class="btn">
+          <Link href="/home-page" class="btn">
             Learn More
-          </a>
+          </Link>
         </div>
         <div className="split-right">
           <small>HACK YOUR CAREER</small>
@@ -25,9 +26,9 @@ const MainPage = () => {
             Metaverse Hiring, Virtual Experience, Campus Hiring,
             <br /> Social Media Campaigns and more!
           </span>
-          <a href="#" class="btn">
+          <Link href="/home-page" class="btn">
             Learn More
-          </a>
+          </Link>
         </div>
       </Split>
     </Container>

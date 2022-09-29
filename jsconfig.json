@@ -4,6 +4,14 @@
       {
         "name": "typescript-styled-plugin"
       }
-    ]
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["src/*"],
+      "@components/*": ["src/components/*"],
+      "@pages/*": ["src/pages/*"],
+      "@routes/*": ["src/routes/*"],
+      "@hooks/*": ["src/hooks/*"]
+    }
   }
 }
