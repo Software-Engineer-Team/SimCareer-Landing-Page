@@ -1,7 +1,11 @@
-import { Container } from "./Body.styled";
+import { Container, StoryFormation } from "./Body.styled";
 
 const Body = () => {
-  return <Container></Container>;
+  return (
+    <Container>
+      <StoryFormation>ddddddd</StoryFormation>
+    </Container>
+  );
 };
 
 export default Body;
