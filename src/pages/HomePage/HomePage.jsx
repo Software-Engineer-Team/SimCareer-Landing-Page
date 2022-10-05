@@ -5,16 +5,19 @@ import Footer from "@components/HomePage/Footer/Footer";
 import FoundingMember from "@components/HomePage/Body/FoundingMember/FoundingMember";
 import Story from "@components/HomePage/Body/Story/Story";
 import Connection from "~/components/HomePage/TechFoundation/Connection";
+import VocationAssistance from "@components/HomePage/VocationAssistance/VocationAssistance";
+
 const HomePage = () => {
   return (
     <div>
       <Header></Header>
       <Body>
-        {/* <FoundingMember></FoundingMember> */}
         {/* <Story></Story> */}
-        <Connection />
+        {/* <Connection /> */}
+        {/* <FoundingMember></FoundingMember> */}
+        <VocationAssistance></VocationAssistance>
       </Body>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </div>
   );
 };
