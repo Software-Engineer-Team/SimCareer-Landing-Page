@@ -3,7 +3,7 @@ import {
   ContentLeft,
   ContentRight,
   Content,
-} from "@components/HomePage/TechFoundation/Connection.styled";
+} from "@components/HomePage/Body/TechFoundation/Connection.styled";
 
 export const AssistanceContainer = styled.section`
   width: 100%;

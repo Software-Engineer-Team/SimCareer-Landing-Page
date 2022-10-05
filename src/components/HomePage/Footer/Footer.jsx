@@ -31,8 +31,15 @@ const Footer = () => {
           </div>
         </div>
       </Content>
-      <hr />
-      <div>© 2022. Career Hackers. All Rights Reserved.</div>
+      <div
+        style={{
+          width: "100%",
+          textAlign: "center",
+        }}
+      >
+        <hr />
+        <div>© 2022. Career Hackers. All Rights Reserved.</div>
+      </div>
     </Container>
   );
 };

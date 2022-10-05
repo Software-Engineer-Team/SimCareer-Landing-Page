@@ -26,6 +26,7 @@ export const Content = styled.div`
   padding: 20px 0;
   height: 100%;
   margin: 0 auto;
+  max-width: 1440px;
 
   div.img-text {
     display: flex;

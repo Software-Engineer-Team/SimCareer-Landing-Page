@@ -26,7 +26,7 @@ const HomePage = () => {
         <Job />
         <Skill />
       </Body>
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
     </div>
   );
 };
