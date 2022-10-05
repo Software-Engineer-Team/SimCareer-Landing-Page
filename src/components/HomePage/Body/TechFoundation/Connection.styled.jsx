@@ -9,7 +9,7 @@ export const Container = styled.section`
 export const ContentLeft = styled.div`
   padding: 20px;
   width: 50%;
-  color: white;
+  color: #fff;
 
   p {
     font-size: 16px;
@@ -88,6 +88,12 @@ export const Content = styled.div`
     align-items: stretch;
     justify-content: center;
     flex-wrap: wrap;
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   .inner-content {
