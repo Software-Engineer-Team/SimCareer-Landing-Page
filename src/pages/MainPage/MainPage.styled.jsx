@@ -131,7 +131,6 @@ export const Container = styled.div`
   }
 
   &.hover-left {
-    background-color: red;
     ${Split} {
       .split-right {
         width: var(--other-width);
@@ -140,7 +139,6 @@ export const Container = styled.div`
   }
 
   &.hover-right {
-    background-color: red;
     ${Split} {
       .split-right {
         width: var(--hover-width);

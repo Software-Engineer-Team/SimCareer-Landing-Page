@@ -1,16 +1,9 @@
-/* import { lazy } from "react"; */
-import { HomePage, MainPage, WebPage } from "@pages/index";
-
-/* const Home = lazy(() => import("@pages/HomePage/HomePage")); */
+import { MainPage, WebPage } from "@pages/index";
 
 export const routes = [
   {
     path: "/web",
     element: WebPage,
-  },
-  {
-    path: "/home-page",
-    element: HomePage,
   },
   {
     path: "/",

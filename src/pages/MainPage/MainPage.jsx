@@ -15,7 +15,7 @@ const MainPage = () => {
             Break into investment banking, consulting and 20+ <br />
             Industries, AI Resume Anlayzer and more!
           </span>
-          <Link to="/home-page" class="btn">
+          <Link to="/home-page/introduction" className="btn">
             Learn More
           </Link>
         </div>
@@ -26,7 +26,7 @@ const MainPage = () => {
             Metaverse Hiring, Virtual Experience, Campus Hiring,
             <br /> Social Media Campaigns and more!
           </span>
-          <Link to="/home-page" class="btn">
+          <Link to="/home-page" className="btn">
             Learn More
           </Link>
         </div>

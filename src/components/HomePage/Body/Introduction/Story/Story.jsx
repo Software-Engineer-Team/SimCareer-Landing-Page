@@ -32,9 +32,13 @@ const Story = () => {
                 help students:
               </p>
             </div>
-            {necessaryOrientations.map(({ url, orientation }) => {
+            {necessaryOrientations.map(({ url, orientation }, idx) => {
               return (
-                <NecessaryOrientation url={url} orientation={orientation} />
+                <NecessaryOrientation
+                  key={idx}
+                  url={url}
+                  orientation={orientation}
+                />
               );
             })}
           </div>

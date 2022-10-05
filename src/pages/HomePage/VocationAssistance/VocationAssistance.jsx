@@ -1,4 +1,4 @@
-import PageHeader from "@utils/PageHeader/PageHeader";
+import PageHeaderGeneral from "@utils/PageHeaderGeneral/PageHeaderGeneral";
 import {
   AssistanceContainer,
   AssistanceContent,
@@ -9,7 +9,7 @@ import {
 const VocationAssistance = () => {
   return (
     <>
-      <PageHeader
+      <PageHeaderGeneral
         bg="/images/vocation-assistance4.png"
         headerTitle="Vocation Assistance"
       />
@@ -76,7 +76,7 @@ const VocationAssistance = () => {
           <div className="inner-content-reverse">
             <AssistanceContentRight>
               <img
-                src="/images/Isometric_webpage-02-1.png"
+                src="/images/Isometric_webpage-03-1.png"
                 alt="Isometric_webpage"
               />
             </AssistanceContentRight>

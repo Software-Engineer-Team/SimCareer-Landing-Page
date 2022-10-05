@@ -4,6 +4,7 @@ export const Container = styled.section`
   width: 100%;
   background-size: cover;
   background-repeat: repeat;
+  padding: 20px;
 `;
 
 export const Content = styled.div`
@@ -16,7 +17,6 @@ export const Content = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  padding-top: 20px;
 
   @media (max-width: 1340px) {
     flex-direction: column;

@@ -1,5 +1,9 @@
 import React from "react";
-import { Content, ContentLeft, ContentRight } from "./Connection.styled";
+import {
+  Content,
+  ContentLeft,
+  ContentRight,
+} from "@components/HomePage/Body/TechFoundation/Connection/Connection.styled";
 import { ContainerSkill } from "./Skill.styled";
 
 const Skill = () => {

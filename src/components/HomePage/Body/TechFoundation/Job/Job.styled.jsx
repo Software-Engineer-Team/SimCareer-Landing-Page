@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { OrientationContainer } from "./Orientaion.styled";
+import { OrientationContainer } from "@components/HomePage/Body/TechFoundation/Orientation/Orientaion.styled";
 
 export const JobContainer = styled(OrientationContainer)`
   background-image: url("/images/bgxyx.png");

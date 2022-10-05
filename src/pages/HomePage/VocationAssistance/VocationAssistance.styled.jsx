@@ -3,12 +3,19 @@ import {
   ContentLeft,
   ContentRight,
   Content,
-} from "@components/HomePage/Body/TechFoundation/Connection.styled";
+} from "@components/HomePage/Body/TechFoundation/Connection/Connection.styled";
 
 export const AssistanceContainer = styled.section`
   width: 100%;
   padding: 20px;
   text-align: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(44, 9, 121, 1) 0%,
+    rgba(0, 232, 255, 1) 83%
+  );
 
   div.text {
     padding: 30px;
@@ -34,9 +41,7 @@ export const AssistanceContent = styled(Content)`
   }
 `;
 
-export const AssistanceContentRight = styled(ContentRight)`
-  color: black;
-`;
+export const AssistanceContentRight = styled(ContentRight)``;
 
 export const AssistanceContentLeft = styled(ContentLeft)`
   p,

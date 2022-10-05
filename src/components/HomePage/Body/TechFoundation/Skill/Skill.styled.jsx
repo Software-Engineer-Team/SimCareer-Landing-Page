@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Container } from "./Connection.styled";
+import { Container } from "@components/HomePage/Body/TechFoundation/Connection/Connection.styled";
 
 export const ContainerSkill = styled(Container)`
   background: white;

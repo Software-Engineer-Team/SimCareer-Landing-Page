@@ -1,14 +1,9 @@
 import {
-  HeaderContent,
   HeaderTopInfo,
   HeaderContainer,
   Nav,
   Logo,
-  Login,
   NavMenu,
-  UserImg,
-  SignOut,
-  DropDown,
 } from "./Header.styled";
 
 import {
@@ -30,6 +25,9 @@ const Header = () => {
     <HeaderContainer>
       <HeaderTopInfo>
         <div className="top-info">
+          <Logo>
+            <img src="/logo.png" alt="Logo"></img>
+          </Logo>
           <ul>
             <li className="address">
               <SiOpenstreetmap />
@@ -47,34 +45,31 @@ const Header = () => {
         </div>
       </HeaderTopInfo>
       <Nav>
-        <Logo>
-          <img src="/logo.png" alt="Logo"></img>
-        </Logo>
         <NavMenu>
-          <Link to="/home">
+          <Link to="/home-page/introduction">
             <AiFillHome />
             <span>Introduction</span>
           </Link>
-          <a>
+          <Link to="/home-page/technology-foundation">
             <FaBattleNet />
             <span>Technology Foundation</span>
-          </a>
-          <a>
+          </Link>
+          <Link to="/home-page/vocation-assistance">
             <HiAcademicCap />
             <span>Vocation Assistance</span>
-          </a>
-          <a>
+          </Link>
+          <Link to="/home-page/activities">
             <MdOutlineVolunteerActivism />
             <span>Activities</span>
-          </a>
-          <a>
+          </Link>
+          <Link>
             <MdAssistant />
             <span>Recruit</span>
-          </a>
-          <a>
+          </Link>
+          <Link to="/home-page/contact-us">
             <RiContactsLine />
             <span>Contact Us</span>
-          </a>
+          </Link>
         </NavMenu>
       </Nav>
     </HeaderContainer>
