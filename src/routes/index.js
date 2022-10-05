@@ -1,12 +1,12 @@
 /* import { lazy } from "react"; */
-import { HomePage, MainPage } from "@pages/index";
+import { HomePage, MainPage, WebPage } from "@pages/index";
 
 /* const Home = lazy(() => import("@pages/HomePage/HomePage")); */
 
 export const routes = [
   {
-    path: "/technology-foundation",
-    element: HomePage,
+    path: "/web",
+    element: WebPage,
   },
   {
     path: "/home-page",
