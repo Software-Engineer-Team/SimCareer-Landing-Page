@@ -5,6 +5,10 @@ import { HomePage, MainPage } from "@pages/index";
 
 export const routes = [
   {
+    path: "/technology-foundation",
+    element: HomePage,
+  },
+  {
     path: "/home-page",
     element: HomePage,
   },
