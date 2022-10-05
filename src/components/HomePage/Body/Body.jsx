@@ -1,9 +1,16 @@
-import { Container, StoryFormation } from "./Body.styled";
+import { Container } from "./Body.styled";
 
-const Body = () => {
+/* import FoundingMember from "./FoundingMember/FoundingMember.jsx"; */
+
+const Body = ({ children }) => {
   return (
     <Container>
-      <StoryFormation>ddddddd</StoryFormation>
+      {/* <Image> */}
+      {/*   <img src="/images/employers.jpg" alt="" /> */}
+      {/* </Image> */}
+      {/* <StoryFormation></StoryFormation> */}
+      {/* <FoundingMember></FoundingMember> */}
+      {children}
     </Container>
   );
 };
