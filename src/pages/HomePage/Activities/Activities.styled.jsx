@@ -67,21 +67,21 @@ export const ActivitiesPillars = styled.div`
 `;
 
 export const PillarContainer = styled.div`
-  width: 45%;
-  margin: 20px 0;
+  width: 35%;
+  margin: 65px 0;
 
   div.content {
     position: relative;
     display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
-    /* flex-direction: ${({ type }) =>
-      type === "left" ? "row-reverse" : "row"}; */
+    justify-content: ${({ type }) =>
+      type === "left" ? "flex-end" : "flex-start"};
     div.bg {
       background-image: url("/images/triple-circles.svg");
       width: 120px;
       height: 120px;
+      min-width: 120px;
+      min-height: 120px;
       background-repeat: no-repeat;
       background-size: cover;
       display: flex;
@@ -94,11 +94,14 @@ export const PillarContainer = styled.div`
       }
     }
     div.info {
-      overflow: hidden;
-      position: relative;
-      left: ${({ type }) => (type === "left" ? "-100px" : "300px")};
-      /* right: ${({ type }) => (type === "left" ? "-100px" : "0")}; */
-      top: 0px;
+      /* Important */
+      min-width: 450px;
+      background-color: #ffffffcc;
+      /* Important */
+
+      position: absolute;
+      top: -50px;
+      left: ${({ type }) => (type === "left" ? "-520px" : "200px")};
       padding: 16px 24px;
       border: 0.5px solid #aaa;
       border-radius: 9px;
@@ -116,10 +119,12 @@ export const PillarContainer = styled.div`
         justify-content: flex-start;
         img {
           width: 22px;
+          align-self: flex-start;
           margin-right: 12px;
         }
         span {
           font-size: 16px;
+          text-align: left;
         }
       }
     }
@@ -127,11 +132,43 @@ export const PillarContainer = styled.div`
 `;
 
 export const LoadingSpinner = styled.svg`
-  width: 90%;
+  width: 100%;
   height: 400px;
   margin: 2em auto;
   position: absolute;
+  min-width: 1400px;
+  z-index: -10;
   top: 0;
+
+  .master {
+    animation: loading-loop 1s linear infinite;
+    --total-length: 371.683;
+    @keyframes loading-loop {
+      0% {
+        stroke-dashoffset: var(--total-length);
+      }
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+  }
 `;
 
-export const LoopingPath = styled.path``;
+export const LoopingPath = styled.path`
+  stroke-width: 0.2;
+  stroke-miterlimit: 10;
+  fill: none;
+  stroke: rgba(0, 0, 0, 0.1);
+`;
+
+export const LoopingPathAnimation = styled.path`
+  stroke-miterlimit: 10;
+  fill: none;
+  stroke: #00000070;
+  stroke-width: 0.3;
+  --total-length: 371.683;
+  --looping-percent: 20;
+  --looping-length: calc((var(--looping-percent) * var(--total-length)) / 100);
+  stroke-dasharray: var(--looping-length),
+    calc(var(--total-length) - var(--looping-length));
+`;
