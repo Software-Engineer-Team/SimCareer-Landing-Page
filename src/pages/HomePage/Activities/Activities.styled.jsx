@@ -28,30 +28,53 @@ export const ActivitiesTitle = styled.div`
 export const ActivitiesImage = styled.div`
   position: relative;
   height: 100%;
-  min-width: 600px;
+  /* min-width: 500px; */
+  width: 100%;
   display: block;
-  img {
+  div.laptop {
     position: relative;
     z-index: 2;
-    max-width: 800px;
+    margin: 0 auto;
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      max-width: 570px;
+      min-width: 570px;
+    }
+
+    img.dashboard {
+      max-width: 270px;
+      min-width: 430px;
+      height: 285px;
+      border-radius: 8px;
+      position: absolute;
+      top: 8px;
+      z-index: 100;
+      display: block;
+    }
   }
 
-  video {
-    margin-top: 2.5px;
+  img.left-triangle {
     position: absolute;
-    max-width: 74%;
-    max-height: 54%;
-    width: 100%;
-    height: 100%;
-    top: 20%;
-    left: 13%;
+    left: 0;
+    width: 150px;
+    top: 0;
+  }
+
+  img.right-triangle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 150px;
   }
 
   div.text {
     font-size: 24px;
-    width: 800px;
     margin-top: 48px;
     font-weight: 550;
+    text-align: center;
   }
 `;
 
@@ -143,6 +166,7 @@ export const LoadingSpinner = styled.svg`
   .master {
     animation: loading-loop 1s linear infinite;
     --total-length: 371.683;
+
     @keyframes loading-loop {
       0% {
         stroke-dashoffset: var(--total-length);

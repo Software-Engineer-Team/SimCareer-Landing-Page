@@ -84,10 +84,24 @@ const Activities = () => {
             All-in-One AI-Driven Career Development Platform
           </ActivitiesTitle>
           <ActivitiesImage>
-            <img src="/images/laptop.png" alt="Laptop" />
-            <video autoPlay={true} loop={true}>
-              <source src="" type="video/mp4"></source>
-            </video>
+            <div className="laptop">
+              <img src="/images/laptop.png" alt="Laptop" />
+              <img
+                src="/images/ProDashboard.png"
+                alt="Pro Dashboard"
+                className="dashboard"
+              />
+            </div>
+            <img
+              src="/images/left-triangle.svg"
+              alt="Left Triangle"
+              className="left-triangle"
+            />
+            <img
+              src="/images/right-triangle.svg"
+              alt="Right Triangle"
+              className="right-triangle"
+            />
             <div className="text">We Strike for Four Pillars of Mastery</div>
           </ActivitiesImage>
           <ActivitiesPillars>
