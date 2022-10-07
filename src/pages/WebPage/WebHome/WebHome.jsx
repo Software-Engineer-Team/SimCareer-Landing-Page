@@ -5,7 +5,7 @@ import { MainMenu } from "./WebHome.styled";
 import Schools from "@components/Web/Body/Schools/Schools";
 
 const images = [
-  { src: "/images/hn-banner.png" },
+  { src: "/images/hn-banner.png", url: "/web/career-guidance" },
   { src: "/images/vl-banner.png" },
   { src: "/images/dh-n2.png" },
   { src: "/images/kn-banner.png" },
@@ -20,10 +20,12 @@ const WebHome = () => {
         <ImageSlide />
       </div>
       <div className="main-menu-item">
-        {images.map(({ src }) => {
+        {images.map(({ src, url }, idx) => {
           return (
-            <div class="item">
-              <img src={src} alt="" />
+            <div class="item" key={idx}>
+              <Link to={url ? url : "#"}>
+                <img src={src} alt="" />
+              </Link>
             </div>
           );
         })}

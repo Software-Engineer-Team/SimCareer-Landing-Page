@@ -17,7 +17,9 @@ const WebHeader = () => {
         </div>
         <div className="nav-right">
           <BsFillBellFill />
-          <AiFillHome />
+          <Link to={"/web"}>
+            <AiFillHome />
+          </Link>
           <FiMenu />
         </div>
       </nav>

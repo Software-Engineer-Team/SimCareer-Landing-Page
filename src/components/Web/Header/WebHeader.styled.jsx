@@ -23,6 +23,11 @@ export const WebContainer = styled.div`
       justify-content: flex-end;
       align-items: center;
       cursor: pointer;
+      & > a {
+        text-decoration: none;
+        color: rgb(0, 101, 255);
+        margin-left: 22px;
+      }
 
       & > svg {
         color: rgb(0, 101, 255);
@@ -33,7 +38,6 @@ export const WebContainer = styled.div`
           margin-right: 10px;
         }
 
-        &:nth-child(2),
         &:last-child {
           margin-left: 22px;
         }

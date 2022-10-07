@@ -1,8 +1,8 @@
-import { MainPage, WebPage } from "@pages/index";
+import { HomePage, MainPage, WebPage } from "@pages/index";
 
 export const routes = [
   {
-    path: "/web",
+    path: "/web/*",
     element: WebPage,
   },
   {
