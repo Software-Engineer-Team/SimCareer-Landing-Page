@@ -75,7 +75,7 @@ const Activities = () => {
   return (
     <>
       <PageHeaderGeneral
-        bg="/images/activities-bg.webp"
+        bg="/images/activity-bg.jpg"
         headerTitle="Activities"
       />
       <ActivitiesContainer>
