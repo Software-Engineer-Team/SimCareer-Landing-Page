@@ -87,13 +87,17 @@ export const ActivitiesPillars = styled.div`
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  background-image: url("/images/track.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1200px;
 `;
 
 export const PillarContainer = styled.div`
   position: relative;
   width: 35%;
   margin: 65px 0;
-  /* height: 1000px; */
 
   div.content {
     position: relative;
@@ -102,7 +106,7 @@ export const PillarContainer = styled.div`
     justify-content: ${({ type }) =>
       type === "left" ? "flex-end" : "flex-start"};
     div.bg {
-      background-image: url("/images/triple-circles.svg");
+      /* background-image: url("/images/triple-circles.svg"); */
       width: 120px;
       height: 120px;
       min-width: 120px;
@@ -119,28 +123,56 @@ export const PillarContainer = styled.div`
       }
     }
     div.info {
-      /* Important */
-      min-width: 450px;
-      background-color: #ffffffcc;
-      height: 240px;
-      width: 645px;
+      min-width: 560px;
+      background-color: #ffffff;
+      transition: all 300ms ease-in;
+      position: relative;
 
-      /* Important */
+      .track-end {
+        position: absolute;
+        top: -100px;
+        right: -50px;
+        img {
+          width: 190px;
+          height: 190px;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
 
       ${({ id }) =>
-        (id === 2 || id === 4) &&
-        `
-        /* display: flex; */
-        /* flex-direction: column-reverse; */
-        top: -15px!important;
+        id === 1
+          ? `
+        top: -150px;
+        min-width: 500px;
+        left: -520px;
+      `
+          : id === 2
+          ? `
+        top: 70px;
+        right: 100px;
+      `
+          : id === 3
+          ? `
+        top: -200px;
+        left: 0px;
+        width: 485px;
+      `
+          : `
+        bottom: -250px;
+        left: 0px;
+        width: 640px;
       `}
 
       position: absolute;
-      top: -100px;
-      left: ${({ type }) => (type === "left" ? "-720px" : "200px")};
       padding: 16px 24px;
-      border: 0.5px solid #aaa;
-      border-radius: 9px;
+      border: 0.5px solid #6a3ce8;
+      box-shadow: 1px 0px 34px -13px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 1px 0px 34px -13px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 1px 0px 34px -13px rgba(0, 0, 0, 0.75);
+      border-radius: 19px;
       div.title {
         display: flex;
         justify-content: flex-start;
@@ -154,8 +186,6 @@ export const PillarContainer = styled.div`
         .btn {
           background-color: #6a3ce8;
           font-size: 17px;
-          margin-top: 30px;
-          margin-right: 20px;
           color: #ffffff;
           text-transform: uppercase;
           font-family: "Anton", sans-serif;
@@ -169,14 +199,14 @@ export const PillarContainer = styled.div`
         }
 
         .pilar {
-          border: 1px solid #6a3ce8;
-          border-radius: 30px;
-          display: flex;
+          /* border: 1px solid #6a3ce8; */
+          /* border-radius: 30px; */
+          display: inline-flex;
           align-items: center;
           justify-content: center;
           height: 75px;
-          /* margin-bottom: 60px; */
-          width: 100%;
+          /* width: 100%; */
+          font-size: 50px;
 
           flex-wrap: nowrap;
           padding: 13px;
@@ -193,12 +223,12 @@ export const PillarContainer = styled.div`
         justify-content: flex-start;
         font-family: Cambria, Georgia, serif;
         img {
-          width: 22px;
+          width: 32px;
           align-self: flex-start;
           margin-right: 12px;
         }
         span {
-          font-size: 20px;
+          font-size: 27px;
           text-align: left;
         }
       }
