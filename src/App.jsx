@@ -1,8 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-
 import MainPage from "@pages/MainPage/MainPage";
-import WebPage from "@pages/WebPage/WebPage";
 // Bug of MainPage
 /* import { MainPage } from "@pages/index"; */
 
@@ -16,7 +14,6 @@ function App() {
       {/* })} */}
       <Route path={"/home-page/*"} element={<HomePage />} />
       <Route path={"/"} element={<MainPage />} />
-      <Route path={"/web-page"} element={<WebPage />} />
     </Routes>
   );
 }
