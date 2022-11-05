@@ -3,6 +3,7 @@ import {
   Introduction,
   Content,
   ProcessRecruit,
+  Partner,
 } from "@components/index";
 import styled from "styled-components";
 
@@ -16,6 +17,7 @@ function LandingPage() {
       <Content />
       <Activities />
       <ProcessRecruit />
+      <Partner />
     </Container>
   );
 }

@@ -22,7 +22,6 @@ const Content = () => {
   return (
     <Container>
       <div className="inner-wrap">
-        {/* <h2 className="title">Về chúng tôi</h2> */}
         <img src="/images/simcareer.png" alt="logo" />
         {contents.map(({ url, title, text }) => (
           <div className="content">
