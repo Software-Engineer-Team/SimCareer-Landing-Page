@@ -11,46 +11,48 @@ const Partner = () => {
         </Fade>
         <PartnerImg
           src="/images/UEH.png"
-          width={300}
-          height={300}
-          left={680}
-          top={250}
-          borderRadius={false}
+          width={170}
+          height={170}
+          left={520}
+          top={230}
+          borderRadius={true}
           zoomType="bottom"
         />
         <PartnerImg
           src="/images/BuildTalents.jfif"
           width={100}
           height={100}
-          left={467}
-          top={493}
+          left={347}
+          top={353}
           borderRadius={true}
         />
         <PartnerImg
           src="/images/Mentoring.png"
-          width={240}
-          height={240}
+          width={140}
+          height={140}
           left={100}
-          top={330}
+          top={270}
           borderRadius={true}
         />
         <PartnerImg
-          src="/images/VECIC.png"
-          width={270}
-          height={270}
-          left={350}
-          top={0}
+          src="/images/VECIC-v2.png"
+          width={204}
+          height={107}
+          left={270}
+          top={100}
           borderRadius={true}
-          bg={"#288517"}
+          /* bg={"#288517"} */
+          bg={"transparent"}
         />
 
         <PartnerImg
-          src="/images/BMG.png"
-          width={280}
-          height={280}
-          left={140}
-          top={680}
-          borderRadius={false}
+          src="/images/BMG.jpg"
+          width={173}
+          height={173}
+          left={120}
+          top={501}
+          borderRadius={true}
+          bg={"transparent"}
         />
         <div className="image">
           <img src="/images/jet-engine.jpg" alt="Jet Engine" />

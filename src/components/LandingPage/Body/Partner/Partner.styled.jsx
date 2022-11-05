@@ -18,14 +18,14 @@ export const Container = styled.section`
     & h2 {
       position: absolute;
       top: 160px;
-      right: -80px;
-      font-size: 100px;
+      right: 40px;
+      font-size: 60px;
       font-weight: 500;
       text-transform: uppercase;
       font-family: "Anton", sans-serif;
     }
     & .image {
-      width: 1740px;
+      width: 1240px;
       img {
         width: 100%;
         object-fit: cover;

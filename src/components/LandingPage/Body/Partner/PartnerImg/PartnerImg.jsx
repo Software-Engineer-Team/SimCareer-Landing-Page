@@ -12,9 +12,22 @@ const PartnerImg = ({
   zoomType,
 }) => {
   return (
-    <Container width={width} height={height} left={left} top={top} bg={bg}>
+    <Container
+      src={src}
+      width={width}
+      height={height}
+      left={left}
+      top={top}
+      bg={bg}
+      borderRadius={borderRadius}
+    >
       <Zoom {...zoomType}>
-        <Image src={src} borderRadius={borderRadius}></Image>
+        <Image
+          width={width}
+          height={height}
+          src={src}
+          borderRadius={borderRadius}
+        ></Image>
       </Zoom>
     </Container>
   );
@@ -25,14 +38,14 @@ export default PartnerImg;
 const Container = styled.div`
   width: ${({ width }) => width}px;
   height: ${({ height }) => height}px;
-  border-radius: 50%;
+  border-radius: ${({ borderRadius }) => (borderRadius ? "50%" : "0%")};
   display: flex;
   align-items: center;
-  background-color: ${({ bg }) => (bg ? bg : "white")};
   justify-content: center;
   position: absolute;
   top: ${({ top }) => top}px;
   left: ${({ left }) => left}px;
+  background-color: ${({ bg }) => bg};
 `;
 
 const Image = styled.img`
