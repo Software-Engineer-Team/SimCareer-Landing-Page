@@ -1,4 +1,4 @@
-import { LandingPage } from "@pages";
+import { LandingPage } from "@pages/index";
 
 export const homeRoutes = [
   {

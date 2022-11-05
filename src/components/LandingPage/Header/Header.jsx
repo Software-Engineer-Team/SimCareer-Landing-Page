@@ -7,17 +7,6 @@ import {
   Demo,
 } from "./Header.styled";
 
-import {
-  MdPhoneIphone,
-  MdAssistant,
-  MdOutlineVolunteerActivism,
-} from "react-icons/md";
-import { SiOpenstreetmap } from "react-icons/si";
-import { FiSend } from "react-icons/fi";
-import { AiFillHome } from "react-icons/ai";
-import { FaBattleNet } from "react-icons/fa";
-import { RiContactsLine } from "react-icons/ri";
-import { HiAcademicCap } from "react-icons/hi";
 import { CgMenuGridO } from "react-icons/cg";
 
 import { Link } from "react-router-dom";
@@ -52,24 +41,24 @@ const Header = () => {
             <Logo>
               <img src="/images/simcareer.png" alt="Logo"></img>
             </Logo>
-            <Link to="/home-page/introduction">
+            <a href="#introduction">
               <span>Trang Chủ</span>
-            </Link>
-            <Link to="/home-page/technology-foundation">
+            </a>
+            <a href="#content">
               <span>Về Chúng Tôi</span>
-            </Link>
-            <Link to="/home-page/vocation-assistance">
+            </a>
+            <a href="#activity">
               <span>Sản phẩm</span>
-            </Link>
-            <Link to="/home-page/activities">
+            </a>
+            <a href="#partner">
               <span>Đối tác</span>
-            </Link>
-            <Link to="/home-page/blog">
+            </a>
+            <a href="#process-recruit">
               <span>Cộng Đồng</span>
-            </Link>
-            <Link to="/home-page/contact-us">
+            </a>
+            <a href="#contact-us">
               <span>Liên hệ</span>
-            </Link>
+            </a>
           </NavMenu>
           <Demo>
             <div className="demo-content">

@@ -5,7 +5,7 @@ import { Container } from "./ProcessRecruit.styled";
 
 const ProcessRecruit = () => {
   return (
-    <Container>
+    <Container id="process-recruit">
       <div className="inner-wrap">
         <div className="title-image">
           <h2 className="title">4 Bước Chinh Phục Nhà Tuyển Dụng</h2>

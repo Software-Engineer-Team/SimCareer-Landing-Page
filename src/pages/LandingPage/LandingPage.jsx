@@ -10,9 +10,6 @@ import styled from "styled-components";
 function LandingPage() {
   return (
     <Container>
-      {/* <div className="img"> */}
-      {/*   <img src="/images/introductionbg.jpg" alt="Introduction" /> */}
-      {/* </div> */}
       <Introduction />
       <Content />
       <Activities />

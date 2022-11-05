@@ -21,7 +21,7 @@ const Content = () => {
     },
   ];
   return (
-    <Container>
+    <Container id="content">
       <div className="inner-wrap">
         {contents.map(({ url, title, text }) => (
           <div className="content">

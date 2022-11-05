@@ -4,7 +4,7 @@ import PartnerImg from "./PartnerImg/PartnerImg";
 
 const Partner = () => {
   return (
-    <Container>
+    <Container id="partner">
       <div className="inner-wrap">
         <Fade right>
           <h2>Đối tác của chúng tôi</h2>

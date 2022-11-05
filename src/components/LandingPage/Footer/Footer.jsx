@@ -1,10 +1,9 @@
 import { Container, Content } from "./Footer.styled";
-import { Link } from "react-router-dom";
 import { MdEmail, MdLocationOn } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <Container>
+    <Container id="contact-us">
       <Content>
         <div className="img-text">
           <img src="/images/simcareer-1.png" alt="Logo" />
