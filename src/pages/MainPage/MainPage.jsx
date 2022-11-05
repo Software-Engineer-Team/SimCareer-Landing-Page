@@ -26,7 +26,7 @@ const MainPage = () => {
             Metaverse Hiring, Virtual Experience, Campus Hiring,
             <br /> Social Media Campaigns and more!
           </span>
-          <Link to="/home-page" className="btn">
+          <Link to="/home-page/introduction" className="btn">
             Learn More
           </Link>
         </div>

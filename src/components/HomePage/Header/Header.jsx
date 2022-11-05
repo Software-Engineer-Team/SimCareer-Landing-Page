@@ -4,6 +4,7 @@ import {
   Nav,
   Logo,
   NavMenu,
+  Demo,
 } from "./Header.styled";
 
 import {
@@ -17,6 +18,7 @@ import { AiFillHome } from "react-icons/ai";
 import { FaBattleNet } from "react-icons/fa";
 import { RiContactsLine } from "react-icons/ri";
 import { HiAcademicCap } from "react-icons/hi";
+import { CgMenuGridO } from "react-icons/cg";
 
 import { Link } from "react-router-dom";
 
@@ -24,53 +26,57 @@ const Header = () => {
   return (
     <HeaderContainer>
       <HeaderTopInfo>
-        <div className="top-info">
-          <Logo>
-            <img src="/logo.png" alt="Logo"></img>
-          </Logo>
-          <ul>
-            <li className="address">
-              <SiOpenstreetmap />
-              <span>2124 WallStreer, London UK</span>
-            </li>
-            <li className="phone">
-              <MdPhoneIphone />
-              <span>+555 65165 156</span>
-            </li>
-            <li className="email">
-              <FiSend />
-              <span>top-info@company.com</span>
-            </li>
-          </ul>
+        <div className="top-info-container">
+          <div className="top-info">
+            <ul>
+              <li className="email">
+                <span>Email: contact@simcareer.vn</span>
+              </li>
+              <li className="phone">
+                <span>Call: 1800 703 451</span>
+              </li>
+              <li className="menu-container">
+                <div className="menu-logo">
+                  <img src="/images/simcareer.png" alt="" />
+                  <div>SIRI</div>
+                </div>
+                <CgMenuGridO />
+              </li>
+            </ul>
+          </div>
         </div>
       </HeaderTopInfo>
       <Nav>
-        <NavMenu>
-          <Link to="/home-page/introduction">
-            <AiFillHome />
-            <span>Introduction</span>
-          </Link>
-          <Link to="/home-page/technology-foundation">
-            <FaBattleNet />
-            <span>Technology Foundation</span>
-          </Link>
-          <Link to="/home-page/vocation-assistance">
-            <HiAcademicCap />
-            <span>Vocation Assistance</span>
-          </Link>
-          <Link to="/home-page/activities">
-            <MdOutlineVolunteerActivism />
-            <span>Activities</span>
-          </Link>
-          <Link>
-            <MdAssistant />
-            <span>Recruit</span>
-          </Link>
-          <Link to="/home-page/contact-us">
-            <RiContactsLine />
-            <span>Contact Us</span>
-          </Link>
-        </NavMenu>
+        <div className="nav-container">
+          <NavMenu>
+            <Logo>
+              <img src="/images/simcareer.png" alt="Logo"></img>
+            </Logo>
+            <Link to="/home-page/introduction">
+              <span>Trang Chủ</span>
+            </Link>
+            <Link to="/home-page/technology-foundation">
+              <span>Về Chúng Tôi</span>
+            </Link>
+            <Link to="/home-page/vocation-assistance">
+              <span>Sản phẩm</span>
+            </Link>
+            <Link to="/home-page/activities">
+              <span>Đối tác</span>
+            </Link>
+            <Link>
+              <span>Cộng Đồng</span>
+            </Link>
+            <Link to="/home-page/contact-us">
+              <span>Liên hệ</span>
+            </Link>
+          </NavMenu>
+          <Demo>
+            <div className="demo-content">
+              <span>Demo</span>
+            </div>
+          </Demo>
+        </div>
       </Nav>
     </HeaderContainer>
   );

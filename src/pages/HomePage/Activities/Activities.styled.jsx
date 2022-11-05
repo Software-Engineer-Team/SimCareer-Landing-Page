@@ -18,8 +18,10 @@ export const ActivitiesContent = styled.div`
 `;
 
 export const ActivitiesTitle = styled.div`
-  font-size: 40px;
-  color: #000;
+  font-family: "Anton", sans-serif;
+  font-size: 73.25px;
+  text-transform: uppercase;
+  color: #6a3ce8;
   font-weight: 550;
   margin-bottom: 32px;
   margin-top: 48px;
@@ -56,25 +58,22 @@ export const ActivitiesImage = styled.div`
     }
   }
 
-  img.left-triangle {
-    position: absolute;
-    left: 0;
-    width: 150px;
-    top: 0;
-  }
-
-  img.right-triangle {
+  svg.right-triangle {
+    color: #6a3ce8;
     position: absolute;
     right: 0;
-    top: 0;
+    top: -47px;
     width: 150px;
+    height: 400px;
   }
 
-  div.text {
-    font-size: 24px;
-    margin-top: 48px;
-    font-weight: 550;
-    text-align: center;
+  svg.left-triangle {
+    color: #6a3ce8;
+    position: absolute;
+    left: 0;
+    top: -47px;
+    width: 150px;
+    height: 400px;
   }
 `;
 
@@ -90,8 +89,11 @@ export const ActivitiesPillars = styled.div`
 `;
 
 export const PillarContainer = styled.div`
+  position: relative;
+  top: 200px;
   width: 35%;
   margin: 65px 0;
+  /* height: 1000px; */
 
   div.content {
     position: relative;
@@ -120,33 +122,83 @@ export const PillarContainer = styled.div`
       /* Important */
       min-width: 450px;
       background-color: #ffffffcc;
+      height: 240px;
+      width: 645px;
+
       /* Important */
 
+      ${({ id }) =>
+        (id === 2 || id === 4) &&
+        `
+        /* display: flex; */
+        /* flex-direction: column-reverse; */
+        top: -10px!important;
+      `}
+
       position: absolute;
-      top: -50px;
-      left: ${({ type }) => (type === "left" ? "-520px" : "200px")};
+      top: -100px;
+      left: ${({ type }) => (type === "left" ? "-720px" : "200px")};
       padding: 16px 24px;
       border: 0.5px solid #aaa;
       border-radius: 9px;
       div.title {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-family: "Anton", sans-serif;
         line-height: 1.1;
-        font-weight: 600;
-        font-size: 20px;
+        font-size: 40px;
         text-align: left;
-        letter-spacing: 1px;
         margin-bottom: 16px;
+
+        .btn {
+          background-color: #6a3ce8;
+          font-size: 17px;
+          margin-top: 30px;
+          margin-right: 20px;
+          color: #ffffff;
+          text-transform: uppercase;
+          font-family: "Anton", sans-serif;
+          border-radius: 30px;
+          min-width: 140px;
+          height: 35px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+
+        .pilar {
+          border: 1px solid #6a3ce8;
+          border-radius: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 75px;
+          /* margin-bottom: 60px; */
+          width: 100%;
+
+          flex-wrap: nowrap;
+          padding: 13px;
+        }
+
+        &:last-child {
+          width: 500px;
+        }
       }
+
       div.text {
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        font-family: Cambria, Georgia, serif;
         img {
           width: 22px;
           align-self: flex-start;
           margin-right: 12px;
         }
         span {
-          font-size: 16px;
+          font-size: 20px;
           text-align: left;
         }
       }
@@ -161,7 +213,7 @@ export const LoadingSpinner = styled.svg`
   position: absolute;
   min-width: 1400px;
   z-index: -10;
-  top: 0;
+  top: 200px;
 
   .master {
     animation: loading-loop 1s linear infinite;

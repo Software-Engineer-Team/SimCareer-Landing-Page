@@ -1,4 +1,4 @@
-import PageHeaderGeneral from "@utils/PageHeaderGeneral/PageHeaderGeneral";
+import React from "react";
 import {
   ActivitiesContainer,
   ActivitiesTitle,
@@ -10,110 +10,95 @@ import {
   LoopingPath,
   LoopingPathAnimation,
 } from "./Activities.styled";
+import { GoTriangleLeft, GoTriangleRight } from "react-icons/go";
 
 const Activities = () => {
   const pillars = [
     {
       id: 1,
-      title: "Pillar 1: Application Mastery",
+      title: "Interview Mastery",
       srcImg: "/images/witch-hat.svg",
       imgAlt: "Witch Hat",
       number: 0,
       type: "left",
       contents: [
-        "Resume and Cover Letter Optimisation",
-        "Aptitude Test Database and Video Interview Library",
-        "Weekly Job Tracker",
-        "Career Strategy Formulation",
+        "Thư viện tổng hợp nội dung phỏng vấn",
+        "Kỹ Năng tham gia phỏng vấn",
+        "Tư vấn 1-1 từ chuyên gia",
+        "Phỏng vấn mô phỏng",
       ],
     },
     {
       id: 3,
-      title: "Pillar 3: Work Experience & ECA",
+      title: "Networking",
       srcImg: "/images/easter-egg.svg",
       imgAlt: "Easter Egg",
       number: 0,
       type: "right",
       contents: [
-        "Guaranteed Placement with Corporate Partners",
-        "Free Venture Capital Dealmaking & Valuation ECA",
-        "Iliad Research Team",
-        "Pythagorean M&A Group",
+        "Chuỗi tư vấn chuyên sâu từ các chuyên gia",
+        "Event, WorkShop, Webinar...",
+        "Coaching 1-1",
       ],
     },
     {
       id: 2,
-      title: "Pillar 2: Interview & Technical Mastery",
+      title: "Application Mastery",
       srcImg: "/images/swords.svg",
       imgAlt: "Swords",
       number: 1,
       type: "left",
       contents: [
-        "Behavioural Interviews",
-        "Technical Interviews",
-        "Weekly Assessment Centre Practice",
-        "Weekly Market News Update",
-        "Bi-Weekly Key News and Deals Analysis",
+        "Tối ưu hóa hồ sơ tuyển dụng ",
+        "Giới thiệu việc làm phù hợp ",
+        "Thiết lập lộ trình phát triển cá nhân",
       ],
     },
     {
       id: 4,
-      title: "Pillar 4: Networking & Intangibles",
+      title: "Work Experience",
       srcImg: "/images/galaxy.svg",
       imgAlt: "Galaxy",
       number: 1,
       type: "right",
-      contents: [
-        "Speaker Series & Networking Events with HR and key decision-makers",
-        "Alumni Network",
-        "Intangibles Factories & Offline Events",
-        "Career Hackers Fitness Training",
-      ],
+      contents: ["Virtual Intern", "Mô phỏng dự án thực tế"],
     },
   ];
 
   return (
     <>
-      <PageHeaderGeneral
-        bg="/images/activity-bg.jpg"
-        headerTitle="Activities"
-      />
-      <ActivitiesContainer>
+      {/* <PageHeaderGeneral */}
+      {/*   bg="/images/activity-bg.jpg" */}
+      {/*   headerTitle="Activities" */}
+      {/* /> */}
+      <ActivitiesContainer id="activity">
         <ActivitiesContent>
-          <ActivitiesTitle>
-            All-in-One AI-Driven Career Development Platform
-          </ActivitiesTitle>
+          <ActivitiesTitle>Sản Phẩm</ActivitiesTitle>
           <ActivitiesImage>
             <div className="laptop">
               <img src="/images/laptop.png" alt="Laptop" />
               <img
-                src="/images/ProDashboard.png"
+                src="/images/pagedemo.jpg"
                 alt="Pro Dashboard"
                 className="dashboard"
               />
             </div>
-            <img
-              src="/images/left-triangle.svg"
-              alt="Left Triangle"
-              className="left-triangle"
-            />
-            <img
-              src="/images/right-triangle.svg"
-              alt="Right Triangle"
-              className="right-triangle"
-            />
-            <div className="text">We Strike for Four Pillars of Mastery</div>
+            <GoTriangleRight className="left-triangle" />
+            <GoTriangleLeft className="right-triangle" />
           </ActivitiesImage>
           <ActivitiesPillars>
             {pillars.map(
               ({ title, id, srcImg, imgAlt, contents, number, type }) => {
                 return (
-                  <PillarContainer type={type} number={number} key={id}>
+                  <PillarContainer type={type} number={number} key={id} id={id}>
                     <div className="content">
                       <div className="bg">
                         <img src={srcImg} alt={imgAlt} />
                         <div className="info">
-                          <div className="title">{title}</div>
+                          <div className="title">
+                            <div className="btn">Tìm hiểu thêm</div>
+                            <div className="pilar">{title}</div>
+                          </div>
 
                           {contents.map((val, idx) => (
                             <div className="text" key={idx}>

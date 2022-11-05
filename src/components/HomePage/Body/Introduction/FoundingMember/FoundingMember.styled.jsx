@@ -1,16 +1,30 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
+  margin-top: 180px;
+  padding: 20px;
   text-align: center;
   width: 100%;
   height: 100%;
+  height: 920px;
   div.inner-wrap {
+    position: relative;
+
+    & > img {
+      width: 270px;
+      height: 270px;
+      object-fit: cover;
+      position: absolute;
+      top: -180px;
+    }
     display: flex;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 20px 0;
-    max-width: 1440px;
+    max-width: 1740px;
+    border: 6px solid #6a3ce8;
+    border-radius: 40px;
     height: 100%;
     margin: 0 auto;
     h2.title {

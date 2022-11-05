@@ -8,15 +8,16 @@ export const Container = styled.section`
 `;
 
 export const Content = styled.div`
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 15px;
+  margin-right: 15px;
   height: 100%;
   padding-bottom: 0;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
+  max-width: 1400px;
+  margin: 0 auto;
+  /* align-items: center; */
+  justify-content: space-between;
 
   @media (max-width: 1340px) {
     flex-direction: column;
@@ -28,56 +29,68 @@ export const ContentLeft = styled.div`
   height: 100%;
   align-items: center;
   text-align: center;
-  padding-top: 75px;
-  padding-bottom: 75px;
-  padding-right: 75px;
   display: flex;
+  margin-top: 130px;
   flex-direction: column;
+  justify-content: center;
 
   .content-left {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 
-    h2 {
-      font-size: 50px;
-      font-weight: 700;
-      line-height: 1.5;
-      margin: 0;
+    .content-left-flag {
+      width: 190px;
+      height: 190px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
-
-    .content-left-description {
-      font-family: "Nunito";
-      text-align: justify;
-      line-height: 1.5;
-      font-weight: 400;
-      font-size: 20px;
+    .content-left-logo {
+      width: auto;
+      height: auto;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
-
-    .necessary-orientation-container {
+    .content-left-introduction {
       width: 100%;
-      flex-direction: row;
       display: flex;
-      align-items: center;
+      justify-content: space-between;
 
-      & > div:first-child {
-        width: 25%;
-        align-items: center;
-        text-align: center;
+      .create-account,
+      .watch-video {
         display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        img {
-          max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        width: 21rem;
+        height: 4.9rem;
+        border-radius: 37px;
+        border: 1px solid #6a3ce8;
+        background-color: #6a3ce8;
+        font-family: "Anton", sans-serif;
+        font-size: 43.25px;
+        color: #ffffff;
+        cursor: pointer;
+        transition: all 100ms ease-in;
+        &:hover {
+          background-color: #ffffff;
+          color: #6a3ce8;
         }
       }
+      .watch-video {
+        color: #000000;
+        background-color: #ffffff;
 
-      & > div:last-child {
-        h5 {
-          margin: 0;
-          font-size: 20px;
-          font-weight: 700;
+        &:hover {
+          background-color: #000000;
+          border-color: #000000;
+          color: #ffffff;
         }
       }
     }
@@ -88,11 +101,15 @@ export const ContentLeft = styled.div`
 `;
 export const ContentRight = styled.div`
   width: 40%;
-  padding: 0px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  /* margin-left: 200px; */
+  /* justify-content: center; */
   flex-wrap: nowrap;
   flex-direction: column;
+  img {
+    margin-left: 200px;
+  }
 
   @media (max-width: 767px) {
     justify-content: center;
