@@ -6,15 +6,14 @@ export const Container = styled.section`
   text-align: center;
   width: 100%;
   height: 920px;
+
   div.inner-wrap {
     position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     padding: 30px;
-    max-width: 2040px;
-    /* border: 6px solid #6a3ce8; */
-    /* border-radius: 40px; */
+    max-width: 1640px;
     height: 100%;
     margin: 0 auto;
     & .content {
@@ -25,6 +24,13 @@ export const Container = styled.section`
       border: 2px solid #000000;
       border-radius: 20px;
       padding: 15px;
+      transition: all 300ms ease-in;
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 1px 0px 34px -13px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 1px 0px 34px -13px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 1px 0px 34px -13px rgba(0, 0, 0, 0.75);
+      }
       & .image {
         width: 330px;
         min-height: 350px;
@@ -44,14 +50,6 @@ export const Container = styled.section`
         font-family: Cambria, Georgia, serif;
         font-size: 35px;
       }
-    }
-
-    & > img {
-      width: 270px;
-      height: 270px;
-      object-fit: cover;
-      position: absolute;
-      top: -180px;
     }
   }
 `;

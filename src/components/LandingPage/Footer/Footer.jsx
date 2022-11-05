@@ -43,7 +43,7 @@ const Footer = () => {
         }}
       >
         <hr />
-        <div>© 2022. Career Hackers. All Rights Reserved.</div>
+        <div>© 2022. Sim Career</div>
       </div>
     </Container>
   );

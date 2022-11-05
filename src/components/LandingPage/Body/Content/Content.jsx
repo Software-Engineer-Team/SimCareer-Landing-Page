@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-reveal";
 import { Container } from "./Content.styled";
 
 const Content = () => {
@@ -22,14 +23,15 @@ const Content = () => {
   return (
     <Container>
       <div className="inner-wrap">
-        <img src="/images/simcareer.png" alt="logo" />
         {contents.map(({ url, title, text }) => (
           <div className="content">
-            <div className="image">
-              <img src={url} alt="Test" />
-            </div>
-            <h2 className="title">{title}</h2>
-            <p className="text">{text}</p>
+            <Fade bottom>
+              <div className="image">
+                <img src={url} alt="Test" />
+              </div>
+              <h2 className="title">{title}</h2>
+              <p className="text">{text}</p>
+            </Fade>
           </div>
         ))}
       </div>

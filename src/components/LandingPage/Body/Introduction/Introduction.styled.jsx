@@ -14,7 +14,7 @@ export const Content = styled.div`
   padding-bottom: 0;
   display: flex;
   flex-direction: row;
-  max-width: 1400px;
+  max-width: 1740px;
   margin: 0 auto;
   /* align-items: center; */
   justify-content: space-between;
@@ -49,6 +49,7 @@ export const ContentLeft = styled.div`
         object-fit: cover;
       }
     }
+
     .content-left-logo {
       width: auto;
       height: auto;
@@ -56,6 +57,32 @@ export const ContentLeft = styled.div`
         width: 100%;
         height: 100%;
         object-fit: cover;
+      }
+    }
+
+    .slogon {
+      margin-top: 20px;
+      width: 100%;
+      .slogon-title {
+        font-family: "Alfa Slab One", cursive;
+        font-weight: 500;
+        font-size: 32.76px;
+      }
+
+      .slogon-content {
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+        margin-top: 10px;
+        font-weight: 700;
+
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+      .slogon-content:last-child {
+        margin-bottom: 60px;
       }
     }
     .content-left-introduction {

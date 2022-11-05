@@ -11,12 +11,13 @@ import {
   LoopingPathAnimation,
 } from "./Activities.styled";
 import { GoTriangleLeft, GoTriangleRight } from "react-icons/go";
+import { Fade, Flip } from "react-reveal";
 
 const Activities = () => {
   const pillars = [
     {
       id: 1,
-      title: "Sim CV",
+      title: "SIM CV",
       type: "left",
       text: "Tìm hiểu thêm",
       contents: [
@@ -27,7 +28,7 @@ const Activities = () => {
     },
     {
       id: 2,
-      title: "Sim Interview",
+      title: "SIM Interview",
       type: "left",
       text: "coming soon",
       contents: [
@@ -39,14 +40,14 @@ const Activities = () => {
     },
     {
       id: 3,
-      title: "Sim Experience",
+      title: "SIM Experience",
       text: "coming soon",
       type: "right",
       contents: ["Virtual Intern", "Mô phỏng dự án thực tế"],
     },
     {
       id: 4,
-      title: "Sim Networking",
+      title: "SIM Networking",
       type: "right",
       text: "coming soon",
       contents: [
@@ -59,54 +60,63 @@ const Activities = () => {
 
   return (
     <>
-      {/* <PageHeaderGeneral */}
-      {/*   bg="/images/activity-bg.jpg" */}
-      {/*   headerTitle="Activities" */}
-      {/* /> */}
       <ActivitiesContainer id="activity">
         <ActivitiesContent>
-          <ActivitiesTitle>Sản Phẩm</ActivitiesTitle>
+          <Flip left>
+            <ActivitiesTitle>Sản Phẩm</ActivitiesTitle>
+          </Flip>
           <ActivitiesImage>
             <div className="laptop">
               <img src="/images/laptop.png" alt="Laptop" />
-              <img
-                src="/images/pagedemo.jpg"
-                alt="Pro Dashboard"
-                className="dashboard"
-              />
+              <Fade bottom>
+                <img
+                  src="/images/pagedemo.jpg"
+                  alt="Pro Dashboard"
+                  className="dashboard"
+                />
+              </Fade>
             </div>
-            <GoTriangleRight className="left-triangle" />
-            <GoTriangleLeft className="right-triangle" />
+            <Fade left>
+              <GoTriangleRight className="left-triangle" />
+            </Fade>
+            <Fade right>
+              <GoTriangleLeft className="right-triangle" />
+            </Fade>
           </ActivitiesImage>
           <ActivitiesPillars>
             {pillars.map(({ title, id, contents, text, number, type }) => {
               return (
                 <PillarContainer type={type} number={number} key={id} id={id}>
-                  <div className="content">
-                    <div className="bg">
-                      <div className="info">
-                        <div className="title">
-                          <div className="pilar">{title}</div>
-                          <div className="btn">{text}</div>
-                        </div>
+                  <Fade
+                    left={(id === 1 || id === 3) && true}
+                    right={(id === 2 || id === 4) && true}
+                  >
+                    <div className="content">
+                      <div className="bg">
+                        <div className="info">
+                          <div className="title">
+                            <div className="pilar">{title}</div>
+                            <div className="btn">{text}</div>
+                          </div>
 
-                        {contents.map((val, idx) => (
-                          <div className="text" key={idx}>
-                            <img
-                              src="/images/Button-Confirm.svg"
-                              alt="Button Confirm"
-                            />
-                            <span>{val}</span>
-                          </div>
-                        ))}
-                        {id === 4 && (
-                          <div className="track-end">
-                            <img src="/images/flag.png" alt="" />
-                          </div>
-                        )}
+                          {contents.map((val, idx) => (
+                            <div className="text" key={idx}>
+                              <img
+                                src="/images/Button-Confirm.svg"
+                                alt="Button Confirm"
+                              />
+                              <span>{val}</span>
+                            </div>
+                          ))}
+                          {id === 4 && (
+                            <div className="track-end">
+                              <img src="/images/flag.png" alt="" />
+                            </div>
+                          )}
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </Fade>
                 </PillarContainer>
               );
             })}

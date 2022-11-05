@@ -20,6 +20,25 @@ const Introduction = () => {
               <div className="content-left-logo">
                 <img src="/images/another-logo.png" alt="flag" />
               </div>
+              <div className="slogon">
+                <div className="slogon-title">
+                  Cùng bạn chinh phục nhà tuyên dụng!
+                </div>
+                <div className="slogon-content">
+                  <img src="/images/complete-cv.jpg" alt="" />
+                  <div className="text">Hoàn thiện CV - Lo chi việc khó</div>
+                </div>
+                <div className="slogon-content">
+                  <img src="/images/route.jpg" alt="" />
+                  <div className="text">Lộ trình rõ ràng - Vô vàn cơ hội</div>
+                </div>
+                <div className="slogon-content">
+                  <img src="/images/virtual-work.jpg" alt="" />
+                  <div className="text">
+                    Làm thực tập ảo - Nhận công việc thật
+                  </div>
+                </div>
+              </div>
               <div className="content-left-introduction">
                 <div className="create-account">
                   <span>Tạo tài khoản</span>

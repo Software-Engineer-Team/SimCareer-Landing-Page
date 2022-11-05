@@ -63,7 +63,7 @@ export const ActivitiesImage = styled.div`
     color: #6a3ce8;
     position: absolute;
     right: 0;
-    top: -47px;
+    top: -387px;
     width: 150px;
     height: 400px;
   }
@@ -72,7 +72,7 @@ export const ActivitiesImage = styled.div`
     color: #6a3ce8;
     position: absolute;
     left: 0;
-    top: -47px;
+    top: -387px;
     width: 150px;
     height: 400px;
   }

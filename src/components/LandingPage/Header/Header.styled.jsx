@@ -9,7 +9,7 @@ export const HeaderTopInfo = styled.div`
   color: #ffffff;
   div.top-info-container {
     background-color: #0f172a50;
-    max-width: 1440px;
+    max-width: 1740px;
     margin: 0 auto;
   }
   div.top-info {
