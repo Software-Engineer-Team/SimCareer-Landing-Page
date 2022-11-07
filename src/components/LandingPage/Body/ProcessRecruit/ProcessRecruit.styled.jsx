@@ -37,6 +37,7 @@ export const Container = styled.section`
       color: #ffffff;
       cursor: pointer;
       transition: all 100ms ease-in;
+      text-decoration: none;
       &:hover {
         background-color: #ffffff;
         color: #6a3ce8;

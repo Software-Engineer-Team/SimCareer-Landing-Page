@@ -49,9 +49,13 @@ const ProcessRecruit = () => {
           </div>
         </div>
 
-        <div className="create-account">
+        <a
+          href={process.env.REACT_APP_ENDPOINT_SIMCAREER}
+          target="_blank"
+          className="create-account"
+        >
           <span>Tham Gia Ngay</span>
-        </div>
+        </a>
       </div>
     </Container>
   );
