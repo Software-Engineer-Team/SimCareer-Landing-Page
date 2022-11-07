@@ -105,6 +105,7 @@ export const ContentLeft = styled.div`
         color: #ffffff;
         cursor: pointer;
         transition: all 100ms ease-in;
+        text-decoration: none;
         &:hover {
           background-color: #ffffff;
           color: #6a3ce8;

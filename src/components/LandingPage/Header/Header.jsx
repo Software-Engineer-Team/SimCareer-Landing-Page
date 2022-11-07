@@ -61,9 +61,13 @@ const Header = () => {
             </a>
           </NavMenu>
           <Demo>
-            <div className="demo-content">
+            <a
+              href={process.env.REACT_APP_ENDPOINT_SIMCAREER}
+              target="_blank"
+              className="demo-content"
+            >
               <span>Demo</span>
-            </div>
+            </a>
           </Demo>
         </div>
       </Nav>

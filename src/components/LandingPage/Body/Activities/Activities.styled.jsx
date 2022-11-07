@@ -19,7 +19,7 @@ export const ActivitiesContent = styled.div`
 
 export const ActivitiesTitle = styled.div`
   font-family: "Anton", sans-serif;
-  font-size: 73.25px;
+  font-size: 70.25px;
   text-transform: uppercase;
   color: #6a3ce8;
   font-weight: 550;
@@ -206,7 +206,7 @@ export const PillarContainer = styled.div`
           justify-content: center;
           height: 75px;
           /* width: 100%; */
-          font-size: 50px;
+          font-size: 40px;
 
           flex-wrap: nowrap;
           padding: 13px;
@@ -228,7 +228,7 @@ export const PillarContainer = styled.div`
           margin-right: 12px;
         }
         span {
-          font-size: 27px;
+          font-size: 20px;
           text-align: left;
         }
       }

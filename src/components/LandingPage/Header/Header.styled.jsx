@@ -177,6 +177,8 @@ export const Demo = styled.div`
     text-align: center;
     transition: all 250ms ease-in-out;
     cursor: pointer;
+    text-decoration: none;
+    color: black;
 
     &:hover {
       background: #000000;

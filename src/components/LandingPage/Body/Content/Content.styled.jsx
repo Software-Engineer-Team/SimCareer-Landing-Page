@@ -5,7 +5,6 @@ export const Container = styled.section`
   padding: 20px;
   text-align: center;
   width: 100%;
-  height: 920px;
 
   div.inner-wrap {
     position: relative;
@@ -45,10 +44,11 @@ export const Container = styled.section`
         font-family: "Anton", sans-serif;
         text-transform: uppercase;
         font-weight: 500;
+        font-size: 33px;
       }
       & .text {
         font-family: Cambria, Georgia, serif;
-        font-size: 35px;
+        font-size: 25px;
       }
     }
   }

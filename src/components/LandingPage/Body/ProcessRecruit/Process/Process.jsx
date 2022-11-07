@@ -36,7 +36,7 @@ const Container = styled.div`
   }
 
   div {
-    font-size: 33px;
+    font-size: 26px;
     font-weight: 300;
     color: #ffffff;
     font-family: "Nunito";

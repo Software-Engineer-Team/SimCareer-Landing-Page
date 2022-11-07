@@ -33,7 +33,7 @@ export const Container = styled.section`
       border: 1px solid #6a3ce8;
       background-color: #6a3ce8;
       font-family: "Anton", sans-serif;
-      font-size: 43.25px;
+      font-size: 35.25px;
       color: #ffffff;
       cursor: pointer;
       transition: all 100ms ease-in;
@@ -58,7 +58,7 @@ export const Container = styled.section`
         color: white;
         font-family: "Anton", sans-serif;
         font-weight: 400;
-        font-size: 75px;
+        font-size: 65px;
         &:after {
           top: 50px;
           left: 0;

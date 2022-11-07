@@ -27,7 +27,7 @@ const Footer = () => {
           </div>
           <div className="email">
             <MdEmail></MdEmail>
-            <span>example@gmail.com</span>
+            <span>contact@simcareer.vn</span>
           </div>
           <div className="address">
             <MdLocationOn></MdLocationOn>

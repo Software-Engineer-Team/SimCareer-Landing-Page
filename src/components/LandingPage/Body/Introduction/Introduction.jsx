@@ -40,9 +40,13 @@ const Introduction = () => {
                 </div>
               </div>
               <div className="content-left-introduction">
-                <div className="create-account">
+                <a
+                  href={process.env.REACT_APP_ENDPOINT_SIMCAREER}
+                  target="_blank"
+                  className="create-account"
+                >
                   <span>Tạo tài khoản</span>
-                </div>
+                </a>
                 <div className="watch-video">
                   <span>Xem video</span>
                 </div>
