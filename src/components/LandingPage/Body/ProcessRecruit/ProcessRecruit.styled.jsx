@@ -1,18 +1,18 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  margin-top: 180px;
+  margin-top: 30px;
   padding: 20px;
   text-align: center;
   width: 100%;
-  height: 1300px;
+  height: 920px;
   background-color: black;
 
   div.inner-wrap {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     padding: 20px 0;
     max-width: 1740px;
@@ -22,18 +22,18 @@ export const Container = styled.section`
     & .create-account {
       align-self: flex-end;
       position: absolute;
-      bottom: 100px;
+      bottom: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 21rem;
-      margin-right: 20px;
+      width: 18rem;
+      margin-right: 10px;
       height: 4.9rem;
       border-radius: 37px;
       border: 1px solid #6a3ce8;
       background-color: #6a3ce8;
       font-family: "Anton", sans-serif;
-      font-size: 35.25px;
+      font-size: 28.25px;
       color: #ffffff;
       cursor: pointer;
       transition: all 100ms ease-in;
@@ -51,7 +51,7 @@ export const Container = styled.section`
       width: 1329px;
       h2.title {
         height: 100%;
-        width: 80%;
+        width: 60%;
         position: absolute;
         top: 0;
         text-align: center;
@@ -59,9 +59,10 @@ export const Container = styled.section`
         color: white;
         font-family: "Anton", sans-serif;
         font-weight: 400;
-        font-size: 65px;
+        font-size: 50px;
+        z-index: 100;
         &:after {
-          top: 50px;
+          top: 20px;
           left: 0;
           position: absolute;
           content: "";
@@ -74,8 +75,9 @@ export const Container = styled.section`
         }
       }
       div.image {
-        width: 1329px;
+        width: 1029px;
         position: relative;
+        top: 20px;
         img {
           width: 100%;
         }

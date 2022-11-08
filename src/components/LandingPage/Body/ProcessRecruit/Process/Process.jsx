@@ -36,7 +36,7 @@ const Container = styled.div`
   }
 
   div {
-    font-size: 26px;
+    font-size: 23px;
     font-weight: 300;
     color: #ffffff;
     font-family: "Nunito";
@@ -47,7 +47,7 @@ const Container = styled.div`
   }
 
   h1 {
-    font-size: 38px;
+    font-size: 20px;
     color: #ffffff;
     font-weight: 800;
     margin: 0;
@@ -56,7 +56,7 @@ const Container = styled.div`
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 16px;
     color: #ffffff;
     font-family: "Nunito";
     margin: 0;

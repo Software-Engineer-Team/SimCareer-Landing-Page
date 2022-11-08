@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  margin-top: 60px;
+  margin-top: 10px;
   padding: 20px;
   text-align: center;
   width: 100%;
@@ -10,7 +10,7 @@ export const Container = styled.section`
     position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
+    grid-gap: 30px;
     padding: 30px;
     max-width: 1640px;
     height: 100%;
@@ -31,8 +31,8 @@ export const Container = styled.section`
         -moz-box-shadow: 1px 0px 34px -13px rgba(0, 0, 0, 0.75);
       }
       & .image {
-        width: 330px;
-        min-height: 350px;
+        width: 230px;
+        min-height: 250px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -44,11 +44,11 @@ export const Container = styled.section`
         font-family: "Anton", sans-serif;
         text-transform: uppercase;
         font-weight: 500;
-        font-size: 33px;
+        font-size: 28px;
       }
       & .text {
         font-family: Cambria, Georgia, serif;
-        font-size: 25px;
+        font-size: 20px;
       }
     }
   }

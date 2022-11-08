@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  margin-top: 80px;
+  margin-top: 10px;
   padding: 20px;
   text-align: center;
   width: 100%;
@@ -18,8 +18,8 @@ export const Container = styled.section`
     & h2 {
       position: absolute;
       top: 160px;
-      right: 40px;
-      font-size: 60px;
+      right: 180px;
+      font-size: 50px;
       font-weight: 500;
       text-transform: uppercase;
       font-family: "Anton", sans-serif;

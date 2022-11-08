@@ -6,8 +6,8 @@ export const ActivitiesContainer = styled.section`
 `;
 
 export const ActivitiesContent = styled.div`
-  padding: 30px;
-  max-width: 1800px;
+  padding: 10px;
+  max-width: 1600px;
   text-align: center;
   width: 100%;
   margin: 0 auto;
@@ -19,21 +19,22 @@ export const ActivitiesContent = styled.div`
 
 export const ActivitiesTitle = styled.div`
   font-family: "Anton", sans-serif;
-  font-size: 70.25px;
+  font-size: 55.25px;
   text-transform: uppercase;
   color: #6a3ce8;
   font-weight: 550;
-  margin-bottom: 32px;
-  margin-top: 48px;
+  margin-bottom: 18px;
+  margin-top: 10px;
   letter-spacing: 1px;
 `;
+
 export const ActivitiesImage = styled.div`
   position: relative;
   height: 100%;
   /* min-width: 500px; */
   width: 100%;
   display: block;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   div.laptop {
     position: relative;
     z-index: 2;
@@ -58,23 +59,26 @@ export const ActivitiesImage = styled.div`
       display: block;
     }
   }
+  --width-triangle: 150px;
+  --height-triangle: 300px;
+  --top-triangle: -387px;
 
   svg.right-triangle {
     color: #6a3ce8;
     position: absolute;
     right: 0;
-    top: -387px;
-    width: 150px;
-    height: 400px;
+    top: var(--top-triangle);
+    width: var(--width-triangle);
+    height: var(--height-triangle);
   }
 
   svg.left-triangle {
     color: #6a3ce8;
     position: absolute;
+    top: var(--top-triangle);
     left: 0;
-    top: -387px;
-    width: 150px;
-    height: 400px;
+    width: var(--width-triangle);
+    height: var(--height-triangle);
   }
 `;
 
@@ -163,7 +167,6 @@ export const PillarContainer = styled.div`
           : `
         bottom: -250px;
         left: 0px;
-        width: 640px;
       `}
 
       position: absolute;
@@ -179,13 +182,12 @@ export const PillarContainer = styled.div`
         align-items: center;
         font-family: "Anton", sans-serif;
         line-height: 1.1;
-        font-size: 40px;
+        font-size: 30px;
         text-align: left;
-        margin-bottom: 16px;
 
         .btn {
           background-color: #6a3ce8;
-          font-size: 17px;
+          font-size: 14px;
           color: #ffffff;
           text-transform: uppercase;
           font-family: "Anton", sans-serif;
@@ -206,7 +208,7 @@ export const PillarContainer = styled.div`
           justify-content: center;
           height: 75px;
           /* width: 100%; */
-          font-size: 40px;
+          font-size: 30px;
 
           flex-wrap: nowrap;
           padding: 13px;
@@ -228,7 +230,7 @@ export const PillarContainer = styled.div`
           margin-right: 12px;
         }
         span {
-          font-size: 20px;
+          font-size: 18px;
           text-align: left;
         }
       }

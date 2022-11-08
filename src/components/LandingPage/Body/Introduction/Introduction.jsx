@@ -25,11 +25,11 @@ const Introduction = () => {
                   Cùng bạn chinh phục nhà tuyên dụng!
                 </div>
                 <div className="slogon-content">
-                  <img src="/images/complete-cv.jpg" alt="" />
+                  <img src="/images/complete-cv.jpg" alt="Test" />
                   <div className="text">Hoàn thiện CV - Lo chi việc khó</div>
                 </div>
                 <div className="slogon-content">
-                  <img src="/images/route.jpg" alt="" />
+                  <img src="/images/route.jpg" alt="Test" />
                   <div className="text">Lộ trình rõ ràng - Vô vàn cơ hội</div>
                 </div>
                 <div className="slogon-content">
@@ -56,7 +56,7 @@ const Introduction = () => {
         </ContentLeft>
         <ContentRight>
           <Fade right>
-            <img src="/images/road.png" alt="" />
+            <img src="/images/road.png" alt="Test" />
           </Fade>
         </ContentRight>
       </Content>

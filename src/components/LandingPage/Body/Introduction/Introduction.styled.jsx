@@ -8,41 +8,35 @@ export const Container = styled.section`
 `;
 
 export const Content = styled.div`
-  margin-left: 15px;
-  margin-right: 15px;
   height: 100%;
   padding-bottom: 0;
   display: flex;
   flex-direction: row;
   max-width: 1740px;
   margin: 0 auto;
-  /* align-items: center; */
-  justify-content: space-between;
-
-  @media (max-width: 1340px) {
-    flex-direction: column;
-  }
+  justify-content: center;
 `;
 
 export const ContentLeft = styled.div`
-  width: 60%;
+  width: 50%;
   height: 100%;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
   text-align: center;
   display: flex;
-  margin-top: 130px;
+  margin-top: 50px;
   flex-direction: column;
-  justify-content: center;
 
   .content-left {
     display: flex;
+    align-self: flex-end;
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
 
     .content-left-flag {
-      width: 190px;
-      height: 190px;
+      width: 200px;
+      height: 100px;
       img {
         width: 100%;
         height: 100%;
@@ -51,7 +45,7 @@ export const ContentLeft = styled.div`
     }
 
     .content-left-logo {
-      width: auto;
+      width: 300px;
       height: auto;
       img {
         width: 100%;
@@ -66,7 +60,7 @@ export const ContentLeft = styled.div`
       .slogon-title {
         font-family: "Alfa Slab One", cursive;
         font-weight: 500;
-        font-size: 32.76px;
+        font-size: 26.76px;
       }
 
       .slogon-content {
@@ -77,31 +71,35 @@ export const ContentLeft = styled.div`
         font-weight: 700;
 
         img {
-          width: 50px;
-          height: 50px;
+          width: 40px;
+          height: 40px;
+        }
+
+        .text {
+          font-size: 16px;
         }
       }
       .slogon-content:last-child {
-        margin-bottom: 60px;
+        margin-bottom: 20px;
       }
     }
     .content-left-introduction {
       width: 100%;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
 
       .create-account,
       .watch-video {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 21rem;
-        height: 4.9rem;
+        width: 12rem;
+        height: 4rem;
         border-radius: 37px;
         border: 1px solid #6a3ce8;
         background-color: #6a3ce8;
         font-family: "Anton", sans-serif;
-        font-size: 43.25px;
+        font-size: 24.25px;
         color: #ffffff;
         cursor: pointer;
         transition: all 100ms ease-in;
@@ -123,24 +121,17 @@ export const ContentLeft = styled.div`
       }
     }
   }
-  @media (max-width: 767px) {
-    padding: 0;
-  }
 `;
 export const ContentRight = styled.div`
   width: 40%;
+  height: 50px;
   display: flex;
   align-items: center;
-  /* margin-left: 200px; */
+  margin-left: 40px;
   /* justify-content: center; */
   flex-wrap: nowrap;
   flex-direction: column;
   img {
-    margin-left: 200px;
-  }
-
-  @media (max-width: 767px) {
-    justify-content: center;
-    align-items: center;
+    height: 500px;
   }
 `;
