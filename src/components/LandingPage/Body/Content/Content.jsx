@@ -11,7 +11,7 @@ const Content = () => {
     },
     {
       url: "/images/content-2.jpg",
-      title: "Kiến thức đi đối với trải nghiệm",
+      title: "Kiến thức đi đôi với trải nghiệm",
       text: "Cung cấp các khóa đào tạo chuyên sâu về kiến thức và kỹ năng thực tế trong lĩnh vực mà bạn quan tâm.",
     },
     {
