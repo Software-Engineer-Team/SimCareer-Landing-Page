@@ -151,18 +151,19 @@ export const PillarContainer = styled.div`
           ? `
         top: -150px;
         min-width: 500px;
-        left: -520px;
+        left: -420px;
       `
           : id === 2
           ? `
         top: 70px;
         right: 100px;
+        min-width: 505px;
       `
           : id === 3
           ? `
-        top: -200px;
+        top: -100px;
         left: 0px;
-        width: 485px;
+        min-width: 505px;
       `
           : `
         bottom: -250px;

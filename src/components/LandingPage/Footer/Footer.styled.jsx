@@ -62,6 +62,7 @@ export const Content = styled.div`
       font-size: 28px;
       margin-top: 0;
       font-weight: 800;
+      font-family: "Roboto";
     }
     a {
       display: block;
