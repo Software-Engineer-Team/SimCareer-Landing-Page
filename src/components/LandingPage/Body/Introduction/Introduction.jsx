@@ -22,7 +22,7 @@ const Introduction = () => {
               </div>
               <div className="slogon">
                 <div className="slogon-title">
-                  Cùng bạn chinh phục nhà tuyên dụng!
+                  Cùng bạn chinh phục nhà tuyển dụng!
                 </div>
                 <div className="slogon-content">
                   <img src="/images/complete-cv.jpg" alt="Test" />

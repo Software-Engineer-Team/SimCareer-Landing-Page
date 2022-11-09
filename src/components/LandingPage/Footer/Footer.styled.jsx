@@ -121,24 +121,5 @@ export const Content = styled.div`
         font-size: 20px;
       }
     }
-
-  /*   div.useful-link { */
-  /*     padding-left: 0; */
-  /*     width: 50%; */
-  /*     max-width: 50%; */
-  /*     a { */
-  /*       margin-top: 3px; */
-  /*     } */
-  /*   } */
-  /* } */
-
-  /* @media screen and (max-width: 890px) { */
-  /*   div.useful-link { */
-  /*     padding-left: 0; */
-  /*     margin-top: 16px; */
-  /*   } */
-  /*   div.contact-us { */
-  /*     width: 100%; */
-  /*   } */
-  /* } */
+  }
 `;

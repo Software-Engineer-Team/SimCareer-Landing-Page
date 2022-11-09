@@ -212,7 +212,7 @@ export const PillarContainer = styled.div`
           font-size: 30px;
 
           flex-wrap: nowrap;
-          padding: 13px;
+          padding-right: 13px;
         }
 
         &:last-child {
