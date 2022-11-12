@@ -48,6 +48,7 @@ export const Content = styled.div`
       margin-top: 16px;
       margin-left: 16px;
       font-size: 16px;
+      font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     }
   }
   div.useful-link {
@@ -122,4 +123,24 @@ export const Content = styled.div`
       }
     }
   }
+
+  /*   div.useful-link { */
+  /*     padding-left: 0; */
+  /*     width: 50%; */
+  /*     max-width: 50%; */
+  /*     a { */
+  /*       margin-top: 3px; */
+  /*     } */
+  /*   } */
+  /* } */
+
+  /* @media screen and (max-width: 890px) { */
+  /*   div.useful-link { */
+  /*     padding-left: 0; */
+  /*     margin-top: 16px; */
+  /*   } */
+  /*   div.contact-us { */
+  /*     width: 100%; */
+  /*   } */
+  /* } */
 `;
