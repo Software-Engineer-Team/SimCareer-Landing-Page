@@ -96,7 +96,9 @@ const Activities = () => {
                         <div className="info">
                           <div className="title">
                             <div className="pilar">{title}</div>
-                            <div className="btn">{text}</div>
+                            <a href="#process-recruit" className="btn">
+                              {text}
+                            </a>
                           </div>
 
                           {contents.map((val, idx) => (
