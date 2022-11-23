@@ -48,7 +48,7 @@ export const Content = styled.div`
       margin-top: 16px;
       margin-left: 16px;
       font-size: 16px;
-      font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+      font-family: Cambria, Georgia, serif;
     }
   }
   div.useful-link {
@@ -63,7 +63,7 @@ export const Content = styled.div`
       font-size: 28px;
       margin-top: 0;
       font-weight: 800;
-      font-family: "Roboto";
+      font-family: Cambria, Georgia, serif;
     }
     a {
       display: block;
@@ -90,11 +90,13 @@ export const Content = styled.div`
       font-size: 20px;
       margin-top: 0;
       font-weight: 800;
+      font-family: Cambria, Georgia, serif;
     }
     div {
       display: flex;
       align-items: center;
       justify-content: flex-start;
+      font-family: Cambria, Georgia, serif;
       svg {
         margin-right: 16px;
         font-size: 35px;

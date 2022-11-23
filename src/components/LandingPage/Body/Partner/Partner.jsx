@@ -18,20 +18,20 @@ const Partner = () => {
           borderRadius={true}
           zoomType="bottom"
         />
-        <PartnerImg
-          src="/images/BuildTalents.jfif"
-          width={100}
-          height={100}
-          left={347}
-          top={353}
-          borderRadius={true}
-        />
+        {/* <PartnerImg */}
+        {/*   src="/images/BuildTalents.jfif" */}
+        {/*   width={100} */}
+        {/*   height={100} */}
+        {/*   left={347} */}
+        {/*   top={353} */}
+        {/*   borderRadius={true} */}
+        {/* /> */}
         <PartnerImg
           src="/images/Mentoring.png"
-          width={140}
-          height={140}
-          left={100}
-          top={270}
+          width={160}
+          height={160}
+          left={120}
+          top={240}
           borderRadius={true}
         />
         <PartnerImg
@@ -46,13 +46,13 @@ const Partner = () => {
         />
 
         <PartnerImg
-          src="/images/BMG.jpg"
-          width={173}
-          height={173}
-          left={120}
-          top={501}
+          src="/images/ivn.webp"
+          width={443}
+          height={133}
+          left={150}
+          top={491}
           borderRadius={true}
-          bg={"transparent"}
+          bg={"#fff"}
         />
         <div className="image">
           <img src="/images/jet-engine.jpg" alt="Jet Engine" />
