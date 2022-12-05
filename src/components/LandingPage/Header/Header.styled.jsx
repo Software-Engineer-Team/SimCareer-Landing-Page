@@ -196,7 +196,7 @@ export const HeaderContainer = styled.header`
   @media screen and (max-width: 768px) {
   }
   /*Tablet nhỏ(480 x 640)*/
-  @media screen and (max-width: 390px) {
+  @media screen and (max-width: 500px) {
     /* display: none; */
     ${HeaderTopInfo} {
       div.top-info {

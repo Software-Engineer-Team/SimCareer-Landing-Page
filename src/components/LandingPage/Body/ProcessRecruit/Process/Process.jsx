@@ -89,7 +89,7 @@ const Container = styled.div`
     }
   }
 
-  @media screen and (max-width: 390px) {
+  @media screen and (max-width: 500px) {
     padding: 0px;
     max-width: 130px;
     p {

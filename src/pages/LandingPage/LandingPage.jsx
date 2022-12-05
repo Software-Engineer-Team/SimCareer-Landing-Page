@@ -10,9 +10,9 @@ import styled from "styled-components";
 function LandingPage() {
   return (
     <Container>
-      {/* <Introduction /> */}
+      <Introduction />
       <Content />
-      {/* <Activities /> */}
+      <Activities />
       <ProcessRecruit />
       {/* <Partner /> */}
     </Container>

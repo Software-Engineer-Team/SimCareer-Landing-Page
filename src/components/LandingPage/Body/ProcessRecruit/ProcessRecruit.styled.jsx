@@ -85,7 +85,7 @@ export const Container = styled.section`
     }
   }
 
-  @media screen and (max-width: 390px) {
+  @media screen and (max-width: 500px) {
     margin-top: 0px;
     height: 400px;
     div.inner-wrap {
@@ -99,7 +99,7 @@ export const Container = styled.section`
         height: 2rem;
       }
       div.title-image {
-        width: 390px;
+        width: auto;
         h2.title {
           width: 100%;
           font-size: 18px;
@@ -127,7 +127,7 @@ export const Container = styled.section`
             }
             div.process-4 {
               top: 90px;
-              left: 225px;
+              left: 210px;
               div {
                 text-align: center;
               }

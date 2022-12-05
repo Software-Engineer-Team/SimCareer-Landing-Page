@@ -53,7 +53,7 @@ export const Container = styled.section`
     }
   }
 
-  @media screen and (max-width: 390px) {
+  @media screen and (max-width: 500px) {
     padding: 0;
     div.inner-wrap {
       display: flex;

@@ -18,7 +18,7 @@ export const Container = styled.footer`
     text-align: left;
   }
 
-  @media screen and (max-width: 390px) {
+  @media screen and (max-width: 500px) {
     padding: 0;
     padding-bottom: 10px;
     hr {
@@ -127,7 +127,7 @@ export const Content = styled.div`
     }
   }
 
-  @media screen and (max-width: 390px) {
+  @media screen and (max-width: 500px) {
     div.contact-us {
       padding-left: 0;
       div.text {

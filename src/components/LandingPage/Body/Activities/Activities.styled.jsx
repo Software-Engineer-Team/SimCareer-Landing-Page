@@ -1,9 +1,4 @@
 import styled from "styled-components";
-export const ActivitiesContainer = styled.section`
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-`;
 
 export const ActivitiesContent = styled.div`
   padding: 10px;
@@ -235,6 +230,149 @@ export const PillarContainer = styled.div`
           font-size: 18px;
           text-align: left;
         }
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    position: relative;
+    width: 35%;
+    margin: 65px 0;
+
+    div.content {
+      position: relative;
+      display: flex;
+      width: 100%;
+      justify-content: ${({ type }) =>
+        type === "left" ? "flex-end" : "flex-start"};
+      div.bg {
+        /* background-image: url("/images/triple-circles.svg"); */
+        width: 20px;
+        height: 20px;
+        min-width: 20px;
+        min-height: 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        img {
+          width: 10px;
+          height: 20px;
+        }
+      }
+      div.info {
+        min-width: 200px !important;
+        height: 110px;
+        .track-end {
+          top: -40px;
+          right: -15px;
+          img {
+            width: 70px;
+            height: 70px;
+          }
+        }
+
+        &:hover {
+          transform: scale(1.1);
+        }
+
+        ${({ id }) =>
+          id === 1
+            ? `
+        top: -100px;
+        min-width: 500px;
+        left: -130px;
+      `
+            : id === 2
+            ? `
+        top: 30px;
+        right: -40px;
+        min-width: 500px;
+        height: 140px;
+      `
+            : id === 3
+            ? `
+        top: -20px;
+        left: -40px;
+        min-width: 80px!important;
+        height: 90px;
+              `
+            : `
+        bottom: -170px;
+        left: -50px;
+        height: 120px;
+      `}
+
+        padding: 6px 16px;
+        div.title {
+          .btn {
+            font-size: 8px;
+            min-width: 65px;
+            height: 16px;
+            line-height: 1.5;
+          }
+
+          .pilar {
+            height: 30px;
+            font-size: 10px;
+
+            padding-right: 13px;
+          }
+
+          &:last-child {
+            width: 500px;
+          }
+        }
+
+        div.text {
+          img {
+            width: 10px;
+          }
+          span {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+`;
+
+export const ActivitiesContainer = styled.section`
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+
+  @media screen and (max-width: 500px) {
+    ${ActivitiesContent} {
+      ${ActivitiesTitle} {
+        font-size: 15.25px;
+      }
+      ${ActivitiesImage} {
+        div.laptop {
+          width: 170px;
+          img {
+            max-width: 170px;
+            min-width: 160px;
+            object-fit: cover;
+          }
+
+          img.dashboard {
+            min-width: 130px;
+            width: 120px !important;
+            height: 85px;
+            border-radius: 8px;
+            top: 2px;
+          }
+        }
+        --width-triangle: 50px;
+        --height-triangle: 100px;
+        --top-triangle: -107px;
+        margin-bottom: 30px;
+      }
+      ${ActivitiesPillars} {
+        height: 450px;
       }
     }
   }

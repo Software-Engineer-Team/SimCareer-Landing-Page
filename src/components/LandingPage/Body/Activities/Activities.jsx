@@ -76,10 +76,10 @@ const Activities = () => {
                 />
               </Fade>
             </div>
-            <Fade left>
+            <Fade bottom>
               <GoTriangleRight className="left-triangle" />
             </Fade>
-            <Fade right>
+            <Fade bottom>
               <GoTriangleLeft className="right-triangle" />
             </Fade>
           </ActivitiesImage>
@@ -88,8 +88,9 @@ const Activities = () => {
               return (
                 <PillarContainer type={type} number={number} key={id} id={id}>
                   <Fade
-                    left={(id === 1 || id === 3) && true}
-                    right={(id === 2 || id === 4) && true}
+                    /* left={(id === 1 || id === 3) && true} */
+                    /* right={(id === 2 || id === 4) && true} */
+                    bottom
                   >
                     <div className="content">
                       <div className="bg">
