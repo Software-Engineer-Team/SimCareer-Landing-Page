@@ -31,4 +31,51 @@ export const Container = styled.section`
       }
     }
   }
+
+  @media screen and (max-width: 500px) {
+    padding: 5px;
+    margin-top: 0px;
+    div.inner-wrap {
+      padding: 5px;
+      & h2 {
+        top: 20px;
+        font-size: 18px;
+        right: 10px;
+      }
+      & div.partner-1 {
+        top: 20px;
+        left: 120px;
+        img {
+          width: 60px;
+          height: 60px;
+        }
+      }
+      & div.partner-2 {
+        top: 40px;
+        left: -20px;
+        img {
+          width: 60px;
+          height: 60px;
+        }
+      }
+      & div.partner-3 {
+        top: 0px;
+        left: 20px;
+        img {
+          width: 100px;
+          height: 50px;
+        }
+      }
+      & div.partner-4 {
+        top: 170px;
+        left: 50px;
+        width: 120px;
+        height: 40px;
+        img {
+          width: 100px;
+          height: 30px;
+        }
+      }
+    }
+  }
 `;

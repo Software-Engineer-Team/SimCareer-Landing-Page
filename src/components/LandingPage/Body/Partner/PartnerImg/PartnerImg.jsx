@@ -10,6 +10,7 @@ const PartnerImg = ({
   borderRadius,
   bg,
   zoomType,
+  number,
 }) => {
   return (
     <Container
@@ -20,6 +21,7 @@ const PartnerImg = ({
       top={top}
       bg={bg}
       borderRadius={borderRadius}
+      className={`partner-${number}`}
     >
       <Zoom {...zoomType}>
         <Image

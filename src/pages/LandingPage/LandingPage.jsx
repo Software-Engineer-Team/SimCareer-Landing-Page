@@ -14,7 +14,7 @@ function LandingPage() {
       <Content />
       <Activities />
       <ProcessRecruit />
-      {/* <Partner /> */}
+      <Partner />
     </Container>
   );
 }

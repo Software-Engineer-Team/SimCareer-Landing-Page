@@ -17,6 +17,7 @@ const Partner = () => {
           top={230}
           borderRadius={true}
           zoomType="bottom"
+          number={1}
         />
         {/* <PartnerImg */}
         {/*   src="/images/BuildTalents.jfif" */}
@@ -33,6 +34,7 @@ const Partner = () => {
           left={120}
           top={240}
           borderRadius={true}
+          number={2}
         />
         <PartnerImg
           src="/images/VECIC-v2.png"
@@ -43,6 +45,7 @@ const Partner = () => {
           borderRadius={true}
           /* bg={"#288517"} */
           bg={"transparent"}
+          number={3}
         />
 
         <PartnerImg
@@ -53,6 +56,7 @@ const Partner = () => {
           top={491}
           borderRadius={true}
           bg={"#fff"}
+          number={4}
         />
         <div className="image">
           <img src="/images/jet-engine.jpg" alt="Jet Engine" />
