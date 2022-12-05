@@ -196,7 +196,68 @@ export const HeaderContainer = styled.header`
   @media screen and (max-width: 768px) {
   }
   /*Tablet nhỏ(480 x 640)*/
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 390px) {
+    /* display: none; */
+    ${HeaderTopInfo} {
+      div.top-info {
+        height: 45px;
+
+        ul {
+          justify-content: space-between;
+          li {
+            font-size: 10px;
+
+            &.phone,
+            &.email {
+              font-family: Cambria, Georgia, serif;
+              margin-right: 0px;
+            }
+          }
+
+          li.menu-container {
+            .menu-logo {
+              img {
+                width: 25px;
+                height: 25px;
+              }
+              div {
+                font-size: 10px;
+              }
+            }
+            svg {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    ${Nav} {
+      height: 40px;
+      & .nav-container {
+        height: 100%;
+        ${NavMenu} {
+          justify-content: space-between;
+          ${Logo} {
+            display: none;
+          }
+
+          & > a:first-child {
+            padding-left: 5px;
+          }
+
+          & span {
+            font-size: 10px;
+            margin-left: 0px;
+          }
+        }
+
+        ${Demo} {
+          display: none;
+        }
+      }
+    }
   }
   /*Iphone(480 x 640)*/
   @media screen and (max-width: 320px) {

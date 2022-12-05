@@ -22,7 +22,7 @@ const Header = () => {
                 <span>Email: contact@simcareer.vn</span>
               </li>
               <li className="phone">
-                <span>Call: 1800 703 451</span>
+                <span>Call: 0963985652</span>
               </li>
               <li className="menu-container">
                 <div className="menu-logo">

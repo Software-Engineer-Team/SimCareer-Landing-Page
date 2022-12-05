@@ -131,7 +131,7 @@ export const Content = styled.div`
     div.contact-us {
       padding-left: 0;
       div.text {
-        font-size: 14px;
+        font-size: 12px;
       }
       div.address {
         margin-top: 3px;
@@ -139,20 +139,21 @@ export const Content = styled.div`
 
       div.address,
       div.email {
-        font-size: 13px;
+        font-size: 12px;
       }
       div svg {
-        font-size: 20px;
+        font-size: 15px;
       }
     }
     div.img-text {
       img {
-        width: 250px;
+        width: 150px;
       }
       div.text {
         line-height: 1.2;
         width: 300px;
         margin-top: 5px;
+        font-size: 14px;
         text-align: left;
       }
     }
