@@ -43,33 +43,33 @@ export const Container = styled.section`
         right: 10px;
       }
       & div.partner-1 {
-        top: 20px;
-        left: 120px;
+        top: 0px;
+        left: 70px;
         img {
-          width: 60px;
-          height: 60px;
+          width: 50px;
+          height: 50px;
         }
       }
       & div.partner-2 {
-        top: 40px;
-        left: -20px;
+        top: 30px;
+        left: -40px;
         img {
-          width: 60px;
-          height: 60px;
+          width: 50px;
+          height: 50px;
         }
       }
       & div.partner-3 {
         top: 0px;
-        left: 20px;
+        left: -30px;
         img {
-          width: 100px;
-          height: 50px;
+          width: 80px;
+          height: 40px;
         }
       }
       & div.partner-4 {
-        top: 170px;
-        left: 50px;
-        width: 120px;
+        top: 130px;
+        left: 70px;
+        width: 100px;
         height: 40px;
         img {
           width: 100px;

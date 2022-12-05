@@ -266,11 +266,11 @@ export const PillarContainer = styled.div`
         min-width: 200px !important;
         height: 110px;
         .track-end {
-          top: -40px;
-          right: -15px;
+          top: -30px;
+          right: 15px;
           img {
-            width: 70px;
-            height: 70px;
+            width: 50px;
+            height: 50px;
           }
         }
 

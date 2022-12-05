@@ -59,7 +59,8 @@ const Partner = () => {
           number={4}
         />
         <div className="image">
-          <img src="/images/jet-engine.jpg" alt="Jet Engine" />
+          {/* <img src="/images/jet-engine.jpg" alt="Jet Engine" /> */}
+          <img src="/images/partner-img.jpg" alt="Jet Engine" />
         </div>
       </div>
     </Container>
