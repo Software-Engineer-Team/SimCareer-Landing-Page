@@ -137,7 +137,7 @@ export const Container = styled.section`
   padding: 20px;
 
   @media screen and (max-width: 500px) {
-    padding: 20px;
+    padding: 10px;
     ${Content} {
       ${ContentLeft} {
         margin-top: 0px;
@@ -164,7 +164,7 @@ export const Container = styled.section`
             }
 
             .slogon-content {
-              margin-left: -5px;
+              margin: 0;
               img {
                 width: 25px;
                 height: 25px;
@@ -174,9 +174,6 @@ export const Container = styled.section`
                 font-size: 10px;
                 text-align: justify;
               }
-            }
-            .slogon-content:last-child {
-              margin-bottom: 20px;
             }
           }
           .content-left-introduction {

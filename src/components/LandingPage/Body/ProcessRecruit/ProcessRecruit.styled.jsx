@@ -91,12 +91,13 @@ export const Container = styled.section`
     div.inner-wrap {
       width: 100%;
       & .create-account {
-        bottom: -6px;
-        margin-right: -10px;
-        width: 5rem;
-        font-size: 9px;
-        padding: 5px;
-        height: 2rem;
+        /* bottom: -6px; */
+        /* margin-right: -10px; */
+        /* width: 5rem; */
+        /* font-size: 9px; */
+        /* padding: 5px; */
+        /* height: 2rem; */
+        display: none;
       }
       div.title-image {
         width: auto;

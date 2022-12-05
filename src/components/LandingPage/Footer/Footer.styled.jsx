@@ -22,7 +22,7 @@ export const Container = styled.footer`
     padding: 0;
     padding-bottom: 10px;
     hr {
-      margin-top: 10px;
+      margin: 5px 0;
     }
 
     & > div:last-child {
@@ -130,30 +130,32 @@ export const Content = styled.div`
   @media screen and (max-width: 500px) {
     div.contact-us {
       padding-left: 0;
+      padding-top: 5px;
       div.text {
-        font-size: 12px;
+        font-size: 10px;
       }
-      div.address {
+      div.address,
+      div.email {
         margin-top: 3px;
       }
 
       div.address,
       div.email {
-        font-size: 12px;
+        font-size: 10px;
       }
       div svg {
-        font-size: 15px;
+        font-size: 10px;
       }
     }
     div.img-text {
       img {
-        width: 150px;
+        width: 120px;
       }
       div.text {
         line-height: 1.2;
         width: 300px;
         margin-top: 5px;
-        font-size: 14px;
+        font-size: 10px;
         text-align: left;
       }
     }

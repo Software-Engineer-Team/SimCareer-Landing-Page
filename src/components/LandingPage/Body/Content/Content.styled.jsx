@@ -59,6 +59,7 @@ export const Container = styled.section`
       display: flex;
       flex-wrap: wrap;
       padding: 12px;
+      padding-top: 0px;
       & .content {
         padding: 0px 15px;
         &:hover {
