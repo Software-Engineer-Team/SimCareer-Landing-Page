@@ -17,6 +17,21 @@ export const Container = styled.footer`
     color: #999;
     text-align: left;
   }
+
+  @media screen and (max-width: 1024px) {
+    padding: 0;
+    padding-bottom: 10px;
+    hr {
+      margin-top: 10px;
+    }
+
+    & > div:last-child {
+      margin: 0;
+      font-size: 10px;
+      color: #999;
+      text-align: left;
+    }
+  }
 `;
 
 export const Content = styled.div`
@@ -41,8 +56,6 @@ export const Content = styled.div`
     }
     div.text {
       color: #fff;
-      text-align: left;
-      line-height: 1.2;
       font-weight: 500;
       width: 300px;
       margin-top: 16px;
@@ -101,48 +114,47 @@ export const Content = styled.div`
         margin-right: 16px;
         font-size: 35px;
       }
-      span {
-        font-size: 16px;
-        min-width: 24px;
-      }
     }
     div.email {
       margin-top: 12px;
+      font-size: 16px;
+      min-width: 24px;
     }
     div.address {
       margin-top: 20px;
+      font-size: 16px;
+      min-width: 24px;
     }
   }
 
-  @media screen and (max-width: 1580px) {
+  @media screen and (max-width: 390px) {
     div.contact-us {
       padding-left: 0;
+      div.text {
+        font-size: 14px;
+      }
       div.address {
         margin-top: 3px;
+      }
+
+      div.address,
+      div.email {
+        font-size: 13px;
       }
       div svg {
         font-size: 20px;
       }
     }
+    div.img-text {
+      img {
+        width: 250px;
+      }
+      div.text {
+        line-height: 1.2;
+        width: 300px;
+        margin-top: 5px;
+        text-align: left;
+      }
+    }
   }
-
-  /*   div.useful-link { */
-  /*     padding-left: 0; */
-  /*     width: 50%; */
-  /*     max-width: 50%; */
-  /*     a { */
-  /*       margin-top: 3px; */
-  /*     } */
-  /*   } */
-  /* } */
-
-  /* @media screen and (max-width: 890px) { */
-  /*   div.useful-link { */
-  /*     padding-left: 0; */
-  /*     margin-top: 16px; */
-  /*   } */
-  /*   div.contact-us { */
-  /*     width: 100%; */
-  /*   } */
-  /* } */
 `;

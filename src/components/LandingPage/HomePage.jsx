@@ -8,14 +8,14 @@ import Footer from "./Footer/Footer";
 const HomePage = () => {
   return (
     <div>
-      <Header></Header>
-      <Body>
-        <Routes>
-          {homeRoutes.map(({ path, element: Page }, idx) => {
-            return <Route key={idx} path={path} element={<Page />} />;
-          })}
-        </Routes>
-      </Body>
+      {/* <Header></Header> */}
+      {/* <Body> */}
+      {/*   <Routes> */}
+      {/*     {homeRoutes.map(({ path, element: Page }, idx) => { */}
+      {/*       return <Route key={idx} path={path} element={<Page />} />; */}
+      {/*     })} */}
+      {/*   </Routes> */}
+      {/* </Body> */}
       <Footer></Footer>
     </div>
   );
