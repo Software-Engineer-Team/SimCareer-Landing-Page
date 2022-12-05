@@ -1,10 +1,5 @@
 import styled from "styled-components";
 
-export const HeaderContainer = styled.header`
-  background: black;
-  width: 100%;
-`;
-
 export const HeaderTopInfo = styled.div`
   color: #ffffff;
   div.top-info-container {
@@ -184,5 +179,29 @@ export const Demo = styled.div`
       background: #000000;
       color: #ffffff;
     }
+  }
+`;
+
+export const HeaderContainer = styled.header`
+  background: black;
+  width: 100%;
+
+  /*Ipad ngang(1024 x 768)*/
+  @media screen and (max-width: 1024px) {
+    ${HeaderTopInfo} {
+      width: 100%;
+    }
+  }
+  /*Ipad dọc(768 x 1024)*/
+  @media screen and (max-width: 768px) {
+  }
+  /*Tablet nhỏ(480 x 640)*/
+  @media screen and (max-width: 480px) {
+  }
+  /*Iphone(480 x 640)*/
+  @media screen and (max-width: 320px) {
+  }
+  /*Smart phone nhỏ*/
+  @media screen and (max-width: 240px) {
   }
 `;

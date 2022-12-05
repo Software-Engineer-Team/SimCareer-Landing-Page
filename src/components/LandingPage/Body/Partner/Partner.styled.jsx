@@ -25,7 +25,6 @@ export const Container = styled.section`
       font-family: "Anton", sans-serif;
     }
     & .image {
-      width: 1240px;
       img {
         width: 100%;
         object-fit: cover;

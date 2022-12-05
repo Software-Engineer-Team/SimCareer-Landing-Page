@@ -245,7 +245,7 @@ export const LoadingSpinner = styled.svg`
   height: 400px;
   margin: 2em auto;
   position: absolute;
-  min-width: 1400px;
+  /* min-width: 1400px; */
   top: 0;
 
   .master {
