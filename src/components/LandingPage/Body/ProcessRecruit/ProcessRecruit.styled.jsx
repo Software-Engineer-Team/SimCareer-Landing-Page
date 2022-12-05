@@ -84,4 +84,57 @@ export const Container = styled.section`
       }
     }
   }
+
+  @media screen and (max-width: 390px) {
+    margin-top: 0px;
+    height: 400px;
+    div.inner-wrap {
+      width: 100%;
+      & .create-account {
+        bottom: -6px;
+        margin-right: -10px;
+        width: 5rem;
+        font-size: 9px;
+        padding: 5px;
+        height: 2rem;
+      }
+      div.title-image {
+        width: 390px;
+        h2.title {
+          width: 100%;
+          font-size: 18px;
+          &:after {
+            top: -30px;
+          }
+        }
+        div.image {
+          width: 329px;
+          top: 30px;
+          div {
+            min-width: 130px;
+            div.process-1 {
+              top: 130px;
+              left: 0px;
+            }
+            div.process-2 {
+              flex-direction: row-reverse;
+              top: 40px;
+              left: 5px;
+            }
+            div.process-3 {
+              top: 220px;
+              left: 130px;
+            }
+            div.process-4 {
+              top: 90px;
+              left: 225px;
+              div {
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 `;

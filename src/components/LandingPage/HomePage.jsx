@@ -9,13 +9,13 @@ const HomePage = () => {
   return (
     <div>
       <Header></Header>
-      {/* <Body> */}
-      {/*   <Routes> */}
-      {/*     {homeRoutes.map(({ path, element: Page }, idx) => { */}
-      {/*       return <Route key={idx} path={path} element={<Page />} />; */}
-      {/*     })} */}
-      {/*   </Routes> */}
-      {/* </Body> */}
+      <Body>
+        <Routes>
+          {homeRoutes.map(({ path, element: Page }, idx) => {
+            return <Route key={idx} path={path} element={<Page />} />;
+          })}
+        </Routes>
+      </Body>
       <Footer></Footer>
     </div>
   );

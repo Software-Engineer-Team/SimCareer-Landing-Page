@@ -18,7 +18,7 @@ export const Container = styled.footer`
     text-align: left;
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 390px) {
     padding: 0;
     padding-bottom: 10px;
     hr {

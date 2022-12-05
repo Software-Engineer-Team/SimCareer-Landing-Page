@@ -52,4 +52,31 @@ export const Container = styled.section`
       }
     }
   }
+
+  @media screen and (max-width: 390px) {
+    padding: 0;
+    div.inner-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 12px;
+      & .content {
+        padding: 0px 15px;
+        &:hover {
+          transform: scale(1.01);
+        }
+        & .image {
+          width: 180px;
+          min-height: 180px;
+        }
+        & .title {
+          font-size: 16px;
+        }
+        & .text {
+          font-size: 14px;
+          margin: 10px;
+          line-height: 1.2;
+        }
+      }
+    }
+  }
 `;

@@ -2,7 +2,12 @@ import styled from "styled-components";
 
 const Process = ({ number, text, top, left }) => {
   return (
-    <Container top={top} left={left} isFlexColumn={number === 2 ? false : true}>
+    <Container
+      top={top}
+      left={left}
+      isFlexColumn={number === 2 ? false : true}
+      className={`process-${number}`}
+    >
       <h3>
         <span>{number}</span>
       </h3>
@@ -81,6 +86,33 @@ const Container = styled.div`
       color: #3c3cc1;
       font-weight: 700;
       font-size: 36px;
+    }
+  }
+
+  @media screen and (max-width: 390px) {
+    padding: 0px;
+    max-width: 130px;
+    p {
+      font-size: 10px;
+    }
+
+    div {
+      font-size: 10px;
+      min-width: 130px;
+      max-width: 130px;
+      margin: 0 10px;
+    }
+
+    h1 {
+      font-size: 16px;
+    }
+
+    h3 {
+      span {
+        width: 20px;
+        height: 20px;
+        font-size: 16px;
+      }
     }
   }
 `;

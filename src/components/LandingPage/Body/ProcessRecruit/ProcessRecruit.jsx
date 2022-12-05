@@ -37,14 +37,14 @@ const ProcessRecruit = () => {
               />
             </Bounce>
 
-            <Fade right>
+            <Bounce top>
               <Process
                 number={4}
                 text="Kết nối tuyển dụng"
                 top={220}
                 left={600}
               />
-            </Fade>
+            </Bounce>
             <img src="/images/process-recruit.jpg" alt="Test" />
           </div>
         </div>
