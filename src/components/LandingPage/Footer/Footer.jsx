@@ -8,8 +8,8 @@ const Footer = () => {
         <div className="img-text">
           <img src="/images/simcareer-1.png" alt="Logo" />
           <div className="text">
-            SIMULATION your Work,
-            <br /> for SIMPLIZING your career !
+            SIMULATE your Work
+            <br /> SIMPLIZE your career !
           </div>
         </div>
         {/* <div className="useful-link"> */}
