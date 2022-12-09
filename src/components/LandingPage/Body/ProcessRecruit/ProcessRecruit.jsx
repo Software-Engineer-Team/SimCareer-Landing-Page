@@ -13,7 +13,7 @@ const ProcessRecruit = () => {
             <Fade left>
               <Process
                 number={1}
-                text="Lựa chọn ngành nghề mong muốn & nộp hồ sơ ứng tuyển tại đây và chúng tôi sẽ đánh giá giúp bạn."
+                text="Tìm hiểu và trải nghiệm doanh nghiệp bạn quan tâm"
                 top={380}
                 left={-30}
               />
@@ -31,7 +31,7 @@ const ProcessRecruit = () => {
             <Bounce bottom>
               <Process
                 number={3}
-                text="Tham gia lộ trình phát triển được cá nhân hóa từ hồ sơ ứng tuyển"
+                text="Nâng cao kỹ năng cần có cho công việc"
                 top={630}
                 left={330}
               />
@@ -40,7 +40,7 @@ const ProcessRecruit = () => {
             <Bounce top>
               <Process
                 number={4}
-                text="Kết nối tuyển dụng"
+                text="Tự tin tham gia ứng tuyển"
                 top={220}
                 left={600}
               />

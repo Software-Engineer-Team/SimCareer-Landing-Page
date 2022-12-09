@@ -28,14 +28,12 @@ const Activities = () => {
     },
     {
       id: 2,
-      title: "SIM Interview",
+      title: "SIM STUDY",
       type: "left",
       text: "coming soon",
       contents: [
-        "Thư viện tổng hợp nội dung phỏng vấn",
-        "Kỹ Năng tham gia phỏng vấn",
-        "Tư vấn 1-1 từ chuyên gia",
-        "Phỏng vấn mô phỏng",
+        "Thư viện tổng hợp tài liệu hướng dẫn tham khảo từ chính doanh nghiệp",
+        "Các khóa học, tài liệu giúp ứng viên tự nâng cao kỹ năng",
       ],
     },
     {
@@ -43,7 +41,11 @@ const Activities = () => {
       title: "SIM Experience",
       text: "coming soon",
       type: "right",
-      contents: ["Virtual Intern", "Mô phỏng dự án thực tế"],
+      contents: [
+        "Virtual job simualtion",
+        "Mô phỏng dự án thực tế từ doanh nghiệp",
+        "Video giới thiệu trực quan về doanh nghiệp",
+      ],
     },
     {
       id: 4,
@@ -51,9 +53,9 @@ const Activities = () => {
       type: "right",
       text: "coming soon",
       contents: [
-        "Chuỗi tư vấn chuyên sâu từ các chuyên gia",
+        "Cộng đồng, blog chia sẻ kiến thức, kinh nghiệm",
         "Event, WorkShop, Webinar...",
-        "Coaching 1-1",
+        "Kết nối đúng doanh nghiệp và ứng viên bạn quan tâm",
       ],
     },
   ];
