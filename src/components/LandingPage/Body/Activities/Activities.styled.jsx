@@ -150,14 +150,14 @@ export const PillarContainer = styled.div`
       `
           : id === 2
           ? `
-        top: 70px;
-        right: 100px;
+        top: -120px;
+        right: -100px;
         min-width: 505px;
       `
           : id === 3
           ? `
-        top: -100px;
-        left: 0px;
+        top: 300px;
+        left: -300px;
         min-width: 505px;
       `
           : `
@@ -287,21 +287,22 @@ export const PillarContainer = styled.div`
       `
             : id === 2
             ? `
-        top: 30px;
-        right: -40px;
-        min-width: 500px;
-        height: 120px;
+        top: 100px;
+        right: -200px;
+        min-width: 250px!important;
+        height: 110px;
       `
             : id === 3
             ? `
-        top: -55px;
-        left: -40px;
-        min-width: 80px!important;
-        height: 130px;
+        top: -115px;
+        left: -185px;
+        min-width: 230px!important;
+        height: 110px;
               `
             : `
-        bottom: -170px;
-        left: -50px;
+        bottom: -200px;
+        left: -100px;
+        min-width: 250px!important;
         height: 120px;
       `}
 

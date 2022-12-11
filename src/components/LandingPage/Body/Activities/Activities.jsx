@@ -6,26 +6,23 @@ import {
   ActivitiesImage,
   ActivitiesContent,
   PillarContainer,
-  LoadingSpinner,
-  LoopingPath,
-  LoopingPathAnimation,
 } from "./Activities.styled";
 import { GoTriangleLeft, GoTriangleRight } from "react-icons/go";
 import { Fade, Flip } from "react-reveal";
 
 const Activities = () => {
   const pillars = [
-    {
-      id: 1,
-      title: "SIM CV",
-      type: "left",
-      text: "Tìm hiểu thêm",
-      contents: [
-        "Tối ưu hóa hồ sơ tuyển dụng ",
-        "Giới thiệu việc làm phù hợp ",
-        "Thiết lập lộ trình phát triển cá nhân",
-      ],
-    },
+    /* { */
+    /*   id: 1, */
+    /*   title: "SIM CV", */
+    /*   type: "left", */
+    /*   text: "Tìm hiểu thêm", */
+    /*   contents: [ */
+    /*     "Tối ưu hóa hồ sơ tuyển dụng ", */
+    /*     "Giới thiệu việc làm phù hợp ", */
+    /*     "Thiết lập lộ trình phát triển cá nhân", */
+    /*   ], */
+    /* }, */
     {
       id: 2,
       title: "SIM STUDY",
