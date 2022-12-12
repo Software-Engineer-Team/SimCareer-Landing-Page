@@ -290,20 +290,20 @@ export const PillarContainer = styled.div`
         top: 90px;
         right: -200px;
         min-width: 250px!important;
-        height: 110px;
+        height: 120px;
       `
             : id === 3
             ? `
         top: -95px;
         left: -185px;
         min-width: 230px!important;
-        height: 110px;
+        height: 120px;
               `
             : `
         bottom: -180px;
         left: -100px;
         min-width: 250px!important;
-        height: 120px;
+        height: 130px;
       `}
 
         padding: 6px 16px;
