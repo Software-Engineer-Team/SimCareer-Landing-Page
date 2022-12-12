@@ -108,7 +108,8 @@ export const Logo = styled.a`
 
   & img {
     width: 100%;
-    display: block;
+    height: 100%;
+    object-fit: cover;
   }
 `;
 
