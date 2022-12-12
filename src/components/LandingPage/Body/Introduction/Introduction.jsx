@@ -47,9 +47,13 @@ const Introduction = () => {
               >
                 <span>Tạo tài khoản</span>
               </a>
-              <div className="watch-video">
+              <a
+                className="watch-video"
+                href={process.env.REACT_APP_ENDPOINT_SIMCAREER_VIDEO}
+                target="_blank"
+              >
                 <span>Xem video</span>
-              </div>
+              </a>
             </div>
           </div>
           {/* </Fade> */}

@@ -177,9 +177,16 @@ export const Container = styled.section`
             }
           }
           .content-left-introduction {
+            justify-content: center;
+            margin-top: 10px;
             .create-account,
             .watch-video {
-              display: none;
+              margin-left: 5px;
+              width: 4rem;
+
+              height: 1.5rem;
+              border-radius: 4px;
+              font-size: 10.25px;
             }
           }
         }
