@@ -287,20 +287,20 @@ export const PillarContainer = styled.div`
       `
             : id === 2
             ? `
-        top: 100px;
+        top: 90px;
         right: -200px;
         min-width: 250px!important;
         height: 110px;
       `
             : id === 3
             ? `
-        top: -115px;
+        top: -95px;
         left: -185px;
         min-width: 230px!important;
         height: 110px;
               `
             : `
-        bottom: -200px;
+        bottom: -180px;
         left: -100px;
         min-width: 250px!important;
         height: 120px;
