@@ -59,12 +59,7 @@ body {
   }
 }
 
-/*Ipad dọc(768 x 1024)*/
-
-@media screen and (max-width: 768px) {
-}
-/*Tablet nhỏ(480 x 640)*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1328px) {
 }
 
 @media screen and (max-width: 500px) {
@@ -73,10 +68,4 @@ body {
     max-width: auto;
     width: auto;
   }
-}
-/*Iphone(480 x 640)*/
-@media screen and (max-width: 320px) {
-}
-/*Smart phone nhỏ*/
-@media screen and (max-width: 240px) {
 }

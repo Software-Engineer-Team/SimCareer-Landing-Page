@@ -75,6 +75,12 @@ export const HeaderTopInfo = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 368px) {
+    div.top-info {
+      padding: 0;
+    }
+  }
 `;
 
 export const Nav = styled.nav`
@@ -152,6 +158,17 @@ export const NavMenu = styled.div`
       transform-origin: left center;
       transform: scaleX(0);
       transition: transform 0.2s ease-in-out;
+    }
+  }
+
+  @media screen and (max-width: 1150px) {
+    & span {
+      font-size: 18.85px;
+    }
+  }
+  @media screen and (max-width: 368px) {
+    & a {
+      padding: 0 5px;
     }
   }
 `;

@@ -32,6 +32,53 @@ export const Container = styled.section`
     }
   }
 
+  @media screen and (max-width: 1300px) {
+    padding: 5px;
+    margin-top: 0px;
+    div.inner-wrap {
+      padding: 5px;
+      & h2 {
+        top: 20px;
+        font-size: 18px;
+        right: 10px;
+      }
+      & div.partner-1 {
+        top: 8rem;
+        left: 22rem;
+        img {
+          width: 150px;
+          height: 150px;
+        }
+      }
+      & div.partner-2 {
+        top: 12rem;
+        left: 4rem;
+        img {
+          width: 150px;
+          height: 150px;
+        }
+      }
+      & div.partner-3 {
+        top: 3rem;
+        left: 4rem;
+        img {
+          width: 240px;
+          height: 120px;
+        }
+      }
+      & div.partner-4 {
+        top: 24rem;
+        left: 10rem;
+        width: 300px;
+        height: 120px;
+        img {
+          width: 300px;
+          height: 90px;
+        }
+      }
+    }
+  }
+
   @media screen and (max-width: 500px) {
     padding: 5px;
     margin-top: 0px;

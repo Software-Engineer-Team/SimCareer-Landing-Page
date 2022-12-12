@@ -88,10 +88,21 @@ const Container = styled.div`
       font-size: 36px;
     }
   }
+  @media screen and (max-width: 1200px) {
+    &.process-4 {
+      width: auto;
+      margin-left: 4rem;
+    }
+  }
 
   @media screen and (max-width: 500px) {
     padding: 0px;
     max-width: 130px;
+
+    &.process-4 {
+      margin-left: 0rem;
+    }
+
     p {
       font-size: 10px;
     }

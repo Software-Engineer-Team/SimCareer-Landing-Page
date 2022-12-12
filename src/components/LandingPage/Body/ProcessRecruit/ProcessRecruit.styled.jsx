@@ -48,7 +48,7 @@ export const Container = styled.section`
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      width: 1329px;
+      /* width: 1329px; */
       h2.title {
         height: 100%;
         width: 60%;
@@ -80,6 +80,16 @@ export const Container = styled.section`
         top: 20px;
         img {
           width: 100%;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    div.inner-wrap {
+      div.title-image {
+        div.image {
+          width: auto;
         }
       }
     }
