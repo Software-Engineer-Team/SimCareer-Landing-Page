@@ -23,7 +23,8 @@
     <li>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#%E2%9A%A1-installation">Installation</a></li>
+        <li><a href="#%E2%9A%99-our-demo-site">Our demo site</a></li>
       </ul>
     </li>
   </ol>
@@ -32,6 +33,8 @@
 ## About The Project
 
 SIMCAREER landing page shows brief introduction of how simcareer can do.
+
+[![Product Name Screen Shot][product-screenshot]](https://simcareer.me/landing-page)
 
 ### Built With
 
@@ -47,7 +50,7 @@ Our project uses the following frameworks:
   npm install npm@latest -g
   ```
 
-### Installation
+### ⚡ Installation
 
 _Below is an installation guide:_
 
@@ -67,8 +70,19 @@ _Below is an installation guide:_
    ```js
    yarn start
    ```
+   or
+   ```js
+   npm start
+   ```
+
+### ⚙ Our demo site
+
+- Here you can easily visit our SIMCAREER Web App with a live preview.
+
+🎯 <https://simcareer.me/landing-page>
 
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
 [styled-components]: https://img.shields.io/badge/styled--components-%23DB7093.svg?style=for-the-badge&logo=styled-components&logoColor=white
 [styled-components-url]: https://styled-components.com/
+[product-screenshot]: ./public/images/simcareer-landing-page.png
