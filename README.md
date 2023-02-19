@@ -81,6 +81,8 @@ _Below is an installation guide:_
 
 🎯 <https://simcareer.me>
 
+<h1 align="center">🌟 Good Luck and Cheers! 🌟</h1>
+
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
 [styled-components]: https://img.shields.io/badge/styled--components-%23DB7093.svg?style=for-the-badge&logo=styled-components&logoColor=white
