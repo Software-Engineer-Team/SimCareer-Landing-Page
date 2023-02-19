@@ -1,12 +1,9 @@
-<a name="readme-top"></a>
-
-<br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="./public/images/simcareer.png" alt="Logo" width="180" height="200">
+  <a href="https://simcareer.me">
+    <img src="./public/images/simcareer.png" alt="Logo" width="190" height="240">
   </a>
 
-  <h3 align="center">SIMCareer Landing Page</h3>
+  <h3 align="center" style="margin: 0; margin-bottom: 20px">SIMCareer Landing Page</h3>
 
 </div>
 
