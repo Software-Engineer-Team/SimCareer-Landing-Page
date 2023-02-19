@@ -79,7 +79,7 @@ _Below is an installation guide:_
 
 - Here you can easily visit our SIMCAREER Web App with a live preview.
 
-🎯 <https://simcareer.me/landing-page>
+🎯 <https://simcareer.me>
 
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
